@@ -32,11 +32,6 @@
 	{% endblock head %}
 </head>
 
-<body id="index" class="home">
-	<header id="banner" class="body">
-		<h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
-	</header><!-- /#banner -->
-	<nav id="menu"><ul>
 	{% for title, link in MENUITEMS %}
 		<li><a href="{{ link }}">{{ title }}</a></li>
 	{% endfor %}
@@ -49,14 +44,21 @@
 		<li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
 	  {% endfor %}
 	{% endif %}
-	</ul></nav><!-- /#menu -->
+<body>
+	<header>
+		<h1><a href="{{ SITEURL }}">{{ SITENAME }}</a> <span>{{ SITESUBTITLE }}</span></h1>
+	</header>
+	<nav>
+		<ul>
+		</ul>
+	</nav>
 	{% block content %}
 	{% endblock %}
-	<footer id="contentinfo" class="body">
 		<address id="about" class="vcard body">
 		Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
 		which takes great advantage of <a href="http://python.org">Python</a>.
 		</address><!-- /#about -->
-	</footer><!-- /#contentinfo -->
+	<footer>
+	</footer>
 </body>
 </html>
