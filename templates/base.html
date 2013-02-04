@@ -32,24 +32,20 @@
 	{% endblock head %}
 </head>
 
-	{% for title, link in MENUITEMS %}
-		<li><a href="{{ link }}">{{ title }}</a></li>
-	{% endfor %}
-	{% if DISPLAY_PAGES_ON_MENU %}
-	  {% for p in PAGES %}
-		<li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-	  {% endfor %}
-	{% else %}
-	  {% for cat, null in categories %}
-		<li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-	  {% endfor %}
-	{% endif %}
 <body>
 	<header>
 		<h1><a href="{{ SITEURL }}">{{ SITENAME }}</a> <span>{{ SITESUBTITLE }}</span></h1>
 	</header>
 	<nav>
 		<ul>
+		{% for title, link in MENUITEMS %}
+			<li><a href="{{ link }}">{{ title }}</a></li>
+		{% endfor %}
+		{% if DISPLAY_PAGES_ON_MENU %}
+			{% for p in PAGES %}
+			<li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+			{% endfor %}
+		{% endif %}
 		</ul>
 	</nav>
 	{% block content %}
