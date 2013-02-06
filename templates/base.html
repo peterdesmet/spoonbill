@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+	{% block head %}
+	<title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+	<meta charset="utf-8" />
+
+	{% if FEED_ALL_ATOM %}
+	<link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom feed" />
+	{% endif %}
+	{% if FEED_ALL_RSS %}
+	<link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS feed" />
+	{% endif %}
+	{% if FEED_ATOM %}
+	<link href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom feed" />
+	{% endif %}
+	{% if FEED_RSS %}
+	<link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS feed" />
+	{% endif %}
+	{% if CATEGORY_FEED_ATOM %}
+	<link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom feed" />
+	{% endif %}
+	{% if CATEGORY_FEED_RSS %}
+	<link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS feed" />
+	{% endif %}
+	{% if TAG_FEED_ATOM %}
+	<link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom feed" />
+	{% endif %}
+	{% if TAG_FEED_RSS %}
+	<link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS feed" />
+	{% endif %}
+	{% endblock head %}
+</head>
+
+<body>
+	<header>
+		<h1><a href="{{ SITEURL }}">{{ SITENAME }}</a> <span>{{ SITESUBTITLE }}</span></h1>
+	</header>
+	<nav>
+		<ul>
+		{% for title, link in MENUITEMS %}
+			<li><a href="{{ link }}">{{ title }}</a></li>
+		{% endfor %}
+		{% if DISPLAY_PAGES_ON_MENU %}
+			{% for p in PAGES %}
+			<li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+			{% endfor %}
+		{% endif %}
+		</ul>
+	</nav>
+	<div>
+	{% block content %}
+	{% endblock %}
+	</div>
+	<footer>
+	</footer>
+</body>
+</html>
