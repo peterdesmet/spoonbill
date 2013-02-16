@@ -1,33 +1,79 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>	  <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>		 <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>		 <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>	  <html lang="{{ DEFAULT_LANG }}" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>		 <html lang="{{ DEFAULT_LANG }}" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>		 <html lang="{{ DEFAULT_LANG }}" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="{{ DEFAULT_LANG }}" class="no-js"> <!--<![endif]-->
 	<head>
+		{% block head %}
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title></title>
+		<title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
 
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
-		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<link rel="stylesheet" href="{{ SITEURL }}/theme/css/normalize.css">
+		<link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
+		<script src="{{ SITEURL }}/theme/js/vendor/modernizr-2.6.2.min.js"></script>
+
+		{% if FEED_ALL_ATOM %}
+		<link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom feed" />
+		{% endif %}
+		{% if FEED_ALL_RSS %}
+		<link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS feed" />
+		{% endif %}
+		{% if FEED_ATOM %}
+		<link href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom feed" />
+		{% endif %}
+		{% if FEED_RSS %}
+		<link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS feed" />
+		{% endif %}
+		{% if CATEGORY_FEED_ATOM %}
+		<link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom feed" />
+		{% endif %}
+		{% if CATEGORY_FEED_RSS %}
+		<link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS feed" />
+		{% endif %}
+		{% if TAG_FEED_ATOM %}
+		<link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom feed" />
+		{% endif %}
+		{% if TAG_FEED_RSS %}
+		<link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS feed" />
+		{% endif %}
+		{% endblock head %}
 	</head>
 	<body>
 		<!--[if lt IE 7]>
 			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 		<![endif]-->
 
-		<!-- Add your site or application content here -->
-		<p>Hello world! This is HTML5 Boilerplate.</p>
+		<header>
+			<h1><a href="{{ SITEURL }}">{{ SITENAME }}</a> <span>{{ SITESUBTITLE }}</span></h1>
+		</header>
+		<nav>
+			<ul>
+			{% for title, link in MENUITEMS %}
+				<li><a href="{{ link }}">{{ title }}</a></li>
+			{% endfor %}
+			{% if DISPLAY_PAGES_ON_MENU %}
+				{% for p in PAGES %}
+				<li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+				{% endfor %}
+			{% endif %}
+			</ul>
+		</nav>
+		<div>
+		{% block content %}
+		{% endblock %}
+		</div>
+		<footer>
+		</footer>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-		<script src="js/plugins.js"></script>
-		<script src="js/main.js"></script>
+		<script>window.jQuery || document.write('<script src="{{ SITEURL }}/theme/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+		<script src="{{ SITEURL }}/theme/js/plugins.js"></script>
+		<script src="{{ SITEURL }}/theme/js/main.js"></script>
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>
