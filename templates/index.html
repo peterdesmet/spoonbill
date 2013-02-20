@@ -6,12 +6,12 @@
 <ol class="index">
 {% for article in articles_page.object_list %}
     <li>
-        <article>
+        <article class="clearfix">
+            <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time>
             <header>
                 <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
             </header>
-            <div class="summary">{{ article.summary }}</div>
-            <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time>
+            <p>{{ article.summary }}</p>
         </article>
     </li>
 {% endfor %}
