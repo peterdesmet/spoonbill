@@ -3,15 +3,22 @@
 {% block content %}
     {% block content_title %}
     {% endblock %}
-<ol>
+<ol class="index">
 {% for article in articles_page.object_list %}
     <li>
         <article>
             <header>
                 <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
             </header>
-            <div>{{ article.summary }}</div>
+            <div class="summary">{{ article.summary }}</div>
             <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time>
+            {% if article.tags %}
+            <ul class="tags">
+            {% for tag in article.tags %}
+            <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+            {% endfor %}
+            </ul>
+            {% endif %}
         </article>
     </li>
 {% endfor %}
