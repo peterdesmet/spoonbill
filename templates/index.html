@@ -12,13 +12,6 @@
             </header>
             <div class="summary">{{ article.summary }}</div>
             <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time>
-            {% if article.tags %}
-            <ul class="tags">
-            {% for tag in article.tags %}
-            <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
-            {% endfor %}
-            </ul>
-            {% endif %}
         </article>
     </li>
 {% endfor %}

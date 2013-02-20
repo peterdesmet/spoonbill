@@ -116,32 +116,6 @@ a {
 
 
 
-.tags {
-    margin: 0;
-    padding: 0;
-    }
-    .tags li {
-        display: inline;
-    }
-    .tags li a, .tags li a:visited {
-        background-color: #E1E1E1;
-        border: 1px solid #83847B;
-        border-radius: 5px;
-        color: currentcolor;
-        font-family: monospace;
-        margin: 0 3px;
-        padding: 3px 6px;
-        text-decoration: none;
-        white-space: nowrap;
-    }
-    .tags li a:hover {
-        background-color: #A7A7A0;
-        color: currentcolor;
-        text-decoration: none;
-    }
-
-
-
 
 
 
