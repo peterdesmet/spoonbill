@@ -101,6 +101,17 @@ body {
     padding: 1em 2em 2em;
 }
 
+a {
+    color: currentcolor;
+    text-decoration: none;
+    }
+    a:hover {
+        color: currentcolor;
+        text-decoration: underline;
+    }
+    a:visited {
+        color: currentcolor;
+    }
 
 
 
