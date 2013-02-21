@@ -93,14 +93,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body {
-    color: #44453B; /* Declared higher */
-    border: 1px dashed #83847B; /* Dev */
-    margin: 0 auto;
-    max-width: 48em;
-    padding: 1em 2em 2em;
-}
-
 a {
     color: currentcolor;
     text-decoration: none;
@@ -113,7 +105,14 @@ a {
         color: currentcolor;
     }
 
-
+.content {
+    color: #44453B; /* Declare on body */
+    border: 1px dashed #83847B; /* Dev */
+    margin: 0 auto;
+    margin-top: 5em;
+    max-width: 48em;
+    padding: 2em;
+}
 
 .index {
     list-style-type: none;
