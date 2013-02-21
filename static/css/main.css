@@ -105,6 +105,47 @@ a {
         color: currentcolor;
     }
 
+.header {
+    background-color: rgba(68,69,59,0.90); /* Dev #44453B */
+    color: white; /* Dev */
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+    .header header {
+        margin: 0 auto;
+        max-width: 48em;
+        padding: 0 2em;
+        }
+        .header hgroup {
+            float: left;
+            }
+            .header h1, .header h2 {
+                margin: 0;
+            }
+            .header h2 {
+                font-size: 1em;
+                padding-bottom: 0.5em;
+            }
+    .header nav {
+        float: right;
+        }
+        .header nav ul {
+            list-style-type: none;
+            margin: 1em 0;
+            padding: 0;
+        }
+            .header nav li {
+                border-left: 2px solid currentcolor;
+                display: inline;
+                padding: 0.3em 0.5em;
+            }
+            .header nav li:first-child {
+                border-left: none;
+            }
+
 .content {
     color: #44453B; /* Declare on body */
     border: 1px dashed #83847B; /* Dev */
