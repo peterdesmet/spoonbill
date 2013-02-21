@@ -164,16 +164,16 @@ a {
         background-color: #EEEEEE;
         border-bottom: 1px dashed #CCCCCC;
         padding: 0.5em;
-    }
-    .index h2, .index p {
-        margin: 0;
-    }
-    .index time {
-        background: #CCCCCC;
-        float: right;
-        margin-left: 1em;
-        padding: 0.3em;
-    }
+        }
+        .index h2, .index p {
+            margin: 0;
+        }
+        .index time {
+            background: #CCCCCC;
+            float: right;
+            margin-left: 1em;
+            padding: 0.3em;
+        }
 
 
 
