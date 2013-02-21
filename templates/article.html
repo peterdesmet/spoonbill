@@ -5,7 +5,7 @@
 <article>
 	<section>
         <header>
-            <h2>{{ article.title }}</h2>
+            <h1>{{ article.title }}</h1>
         </header>
         <footer>
             <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time>
@@ -21,7 +21,7 @@
     </section>
     <section>
         <header>
-            <h3>Comments</h3>
+            <h2>Comments</h2>
         </header>
         {% include "disqus.html" %}
     </section>
