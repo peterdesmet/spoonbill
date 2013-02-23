@@ -3,7 +3,7 @@
 {% block title %}{{ article.title }} - {{ SITENAME }}{% endblock %}
 {% block content %}
 <article>
-	<section>
+	<section class="post">
         <header>
             <h1>{{ article.title }}</h1>
         </header>
@@ -19,7 +19,7 @@
             {{ article.content }}
         </div>
     </section>
-    <section>
+    <section class="comments">
         <header>
             <h2>Comments</h2>
         </header>
