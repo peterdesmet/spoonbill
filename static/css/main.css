@@ -94,15 +94,15 @@ textarea {
    ========================================================================== */
 
 a {
-    color: currentcolor;
+    color: #1C7BBB;
     text-decoration: none;
     }
     a:hover {
-        color: currentcolor;
+        color: #105F9E;
         text-decoration: underline;
     }
     a:visited {
-        color: currentcolor;
+        color: #1C7BBB;
     }
 
 .header {
@@ -113,6 +113,9 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
+    }
+    .header a {
+        color: white;
     }
     .header header {
         margin: 0 auto;
