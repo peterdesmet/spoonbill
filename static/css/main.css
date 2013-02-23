@@ -93,7 +93,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body {
+body { /* Dev: declare higher */
     color: #44453B;
     font-family: "Open Sans", sans-serif;
     font-size: 1.2em;
@@ -114,7 +114,7 @@ a {
         color: #1C7BBB;
     }
 
-.header {
+.header { /* On body > div */
     background-color: rgba(68,69,59,0.90); /* Dev #44453B */
     color: white; /* Dev */
     margin: 0;
@@ -165,7 +165,7 @@ a {
                 border-left: none;
             }
 
-.content {
+.content { /* On body > div */
     /*border: 1px dashed #83847B;*/
     margin: 0 auto;
     margin-top: 4em;
