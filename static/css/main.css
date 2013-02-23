@@ -127,43 +127,45 @@ a {
         color: white;
     }
     .header header {
+        line-height: 1em;
         margin: 0 auto;
         max-width: 40em;
         padding: 0 2em;
         }
+        .header hgroup, .header nav {
+            font-size: 0.8em;
+            padding: 1em 0.5em;
+        }
         .header hgroup {
             float: left;
-            font-size: 0.8em;
-            padding: 0.5em;
             }
             .header h2, .header h3 {
                 font-weight: normal;
                 margin: 0;
             }
             .header h2 {
+                margin-right: 2em;
             }
             .header h3 {
                 font-size: 1em;
                 font-family: cursive;
-                padding-bottom: 0.5em;
             }
-    .header nav {
-        float: right;
-        font-size: 0.8em;
-        }
-        .header nav ul {
-            list-style-type: none;
-            margin: 1em 0;
-            padding: 0;
+        .header nav {
+            float: right;
             }
-            .header nav li {
-                border-left: 2px solid currentcolor;
-                display: inline;
-                padding: 0.3em 0.5em;
-            }
-            .header nav li:first-child {
-                border-left: none;
-            }
+            .header nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                }
+                .header nav li {
+                    border-left: 2px solid currentcolor;
+                    display: inline;
+                    padding: 0.3em 0.5em;
+                }
+                .header nav li:first-child {
+                    border-left: none;
+                }
 
 .content { /* On body > div */
     /*border: 1px dashed #83847B;*/
