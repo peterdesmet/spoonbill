@@ -133,6 +133,7 @@ a {
         .header hgroup {
             float: left;
             font-size: 0.8em;
+            padding: 0.5em;
             }
             .header h2, .header h3 {
                 font-weight: normal;
@@ -178,6 +179,7 @@ a {
         }
         .index article {
             border-bottom: 1px dashed #CCCCCC;
+            padding: 0.5em;
             }
             .index h2, .index p {
                 margin: 0;
