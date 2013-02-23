@@ -140,6 +140,7 @@ a {
             float: left;
             }
             .header h2, .header h3 {
+                float: left;
                 font-weight: normal;
                 margin: 0;
             }
@@ -147,8 +148,9 @@ a {
                 margin-right: 2em;
             }
             .header h3 {
+                font-family: inherit;
                 font-size: 1em;
-                font-family: cursive;
+                font-style: italic;
             }
         .header nav {
             float: right;
