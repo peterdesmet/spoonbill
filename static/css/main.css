@@ -108,7 +108,7 @@ a {
     }
     a:hover {
         color: #105F9E;
-        text-decoration: underline;
+        border-bottom: 1px dotted currentcolor;
     }
     a:visited {
         color: #1C7BBB;
