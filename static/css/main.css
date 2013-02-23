@@ -94,6 +94,7 @@ textarea {
    ========================================================================== */
 
 body {
+    color: #44453B;
     font-family: "Open Sans", sans-serif;
     font-size: 1.2em;
 }
@@ -165,7 +166,6 @@ a {
             }
 
 .content {
-    color: #44453B; /* Dev: Declare on body */
     /*border: 1px dashed #83847B;*/
     margin: 0 auto;
     margin-top: 4em;
