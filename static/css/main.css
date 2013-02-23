@@ -154,8 +154,8 @@ a {
             }
 
 .content {
-    color: #44453B; /* Declare on body */
-    border: 1px dashed #83847B; /* Dev */
+    color: #44453B; /* Dev: Declare on body */
+    /*border: 1px dashed #83847B;*/
     margin: 0 auto;
     margin-top: 5em;
     max-width: 48em;
@@ -168,7 +168,6 @@ a {
     padding: 0;
     }
     .index article {
-        background-color: #EEEEEE;
         border-bottom: 1px dashed #CCCCCC;
         padding: 0.5em;
         }
@@ -176,7 +175,6 @@ a {
             margin: 0;
         }
         .index time {
-            background: #CCCCCC;
             float: right;
             margin-left: 1em;
             padding: 0.3em;
