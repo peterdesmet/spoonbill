@@ -115,7 +115,8 @@ a {
         color: #1C7BBB;
     }
 
-    a[href*="picasaweb"], a[href^="https://github.com"] {
+    a[href*="picasaweb"],
+    a[href^="https://github.com"] {
     /* Bug: http://stackoverflow.com/questions/8951822
             The attribute-selector doesn't work when style is applied with :before only, 
             causing all <a>s to be targetted. Adding any style for the element without 
@@ -151,14 +152,16 @@ a {
         max-width: 40em;
         padding: 0 2em;
         }
-        .header hgroup, .header nav {
+        .header hgroup,
+        .header nav {
             font-size: 0.8em;
             padding: 1em 0.5em;
         }
         .header hgroup {
             float: left;
             }
-            .header h2, .header h3 {
+            .header h2,
+            .header h3 {
                 float: left;
                 font-weight: normal;
                 margin: 0;
@@ -204,7 +207,8 @@ a {
             border-bottom: 1px dashed #CCCCCC;
             padding: 0.5em;
             }
-            .index h2, .index p {
+            .index h2,
+            .index p {
                 margin: 0;
             }
             .index time {
@@ -230,7 +234,8 @@ a {
             .post footer a {
                 color: currentcolor;
             }
-            .post time, .post address {
+            .post time,
+            .post address {
                 display: inline;
                 font-style: normal;
             }
