@@ -233,6 +233,21 @@ a {
                 display: inline;
                 font-style: normal;
             }
+            .tags { /* On body > .content > article > section > footer > ul */
+                font-size: 0.8em;
+                margin: 0.5em 0 0;
+                padding: 0;
+                }
+                .tags li {
+                    display: inline;
+                    list-style: none;
+                }
+                .tags li:after {
+                    content: ", ";
+                }
+                .tags li:last-child:after {
+                    content: ".";
+                }
     .comments { /* On body > .content > article > section */
         border-top: 1px dashed #CCCCCC;
         padding: 0.5em;
