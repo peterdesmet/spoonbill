@@ -155,7 +155,7 @@ a {
         .header hgroup,
         .header nav {
             font-size: 0.8em;
-            padding: 1em 0.5em;
+            padding: 1em 0em;
         }
         .header hgroup {
             float: left;
@@ -204,7 +204,8 @@ a {
         padding: 0;
         }
         .index article {
-            border-bottom: 1px dashed #CCCCCC;
+            border-bottom: 1px dashed #CCCCCC;        
+            margin: 0 -0.5em; /* Extend border left/right */
             padding: 0.5em;
             }
             .index h2,
@@ -217,7 +218,6 @@ a {
                 padding: 0.3em;
             }
     .post { /* On body > .content > article > section */
-        padding: 0.5em;
         }
         .post h1 {
             line-height: 1.1em;
@@ -264,6 +264,7 @@ a {
                 }
     .comments { /* On body > .content > article > section */
         border-top: 1px dashed #CCCCCC;
+        margin: 0 -0.5em; /* Extend border left/right */
         padding: 0.5em;
         }
 
