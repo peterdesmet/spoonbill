@@ -198,6 +198,10 @@ a {
     max-width: 40em;
     padding: 2em;
     }
+    .content h1 {
+        line-height: 1.1em;
+        margin-top: 0.5em;        
+    }
     .index { /* On body > .content > ol */
         list-style-type: none;
         margin: 0;
@@ -219,10 +223,6 @@ a {
             }
     .post { /* On body > .content > article > section */
         }
-        .post h1 {
-            line-height: 1.1em;
-            margin: 0.5em 0 0;
-        }
         .post h2 {
             position: relative;
             }
@@ -235,7 +235,7 @@ a {
             color: #AAAAAA;
             font-size: 0.8em;
             letter-spacing: 0.3em;
-            margin-bottom: 2em;
+            margin: -1.5em 0 2em; /* Closer to h1 */
             padding: 1em;
             text-transform: uppercase;
             }
