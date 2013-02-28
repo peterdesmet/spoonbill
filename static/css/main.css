@@ -221,9 +221,9 @@ a {
                 margin-left: 1em;
                 padding: 0.3em;
             }
-    .post { /* On body > .content > article > section */
+    .single { /* On body > .content > article > section */
         }
-        .post footer {
+        .single footer {
             color: #AAAAAA;
             font-size: 0.8em;
             letter-spacing: 0.3em;
@@ -231,11 +231,11 @@ a {
             padding: 1em;
             text-transform: uppercase;
             }
-            .post footer a {
+            .single footer a {
                 color: currentcolor;
             }
-            .post time,
-            .post address {
+            .single time,
+            .single address {
                 display: inline;
                 font-style: normal;
             }
@@ -254,7 +254,7 @@ a {
                 .tags li:last-child:after {
                     content: ".";
                 }
-        .post img {
+        .single img {
             max-width: 100%;
         }
     .comments { /* On body > .content > article > section */
