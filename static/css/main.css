@@ -223,14 +223,6 @@ a {
             }
     .post { /* On body > .content > article > section */
         }
-        .post h2 {
-            position: relative;
-            }
-            .post h2:before {
-                content: "›";
-                position: absolute;
-                left: -1em;
-            }
         .post footer {
             color: #AAAAAA;
             font-size: 0.8em;
