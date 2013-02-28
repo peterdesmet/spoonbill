@@ -118,9 +118,9 @@ a {
 .header { /* On body > div */
     background-color: rgba(68,69,59,0.90); /* Dev #44453B */
     color: white; /* Dev */
-    margin: 0;
-    padding: 0;
+    font-family: "Quicksand", sans-serif;
     position: fixed;
+    text-transform: uppercase;
     top: 0;
     width: 100%;
     }
@@ -133,29 +133,26 @@ a {
         max-width: 40em;
         padding: 0 2em;
         }
-        .header hgroup,
+        .header h2,
+        .header h3,
         .header nav {
+            float: left;
             font-size: 0.8em;
+            margin: 0;
             padding: 1em 0em;
         }
-        .header hgroup {
-            float: left;
-            }
-            .header h2,
-            .header h3 {
-                float: left;
-                font-weight: normal;
-                margin: 0;
-            }
-            .header h2 {
-                margin-right: 2em;
-            }
-            .header h3 {
-                font-size: 1em;
-                font-style: italic;
-            }
+        .header h2 {
+            width: 25%;
+        }
+        .header h3 {
+            font-style: italic;
+            text-align: center;
+            text-transform: none;
+            width: 50%;
+        }
         .header nav {
-            float: right;
+            text-align: right;
+            width: 25%;
             }
             .header nav ul {
                 list-style-type: none;
@@ -163,12 +160,8 @@ a {
                 padding: 0;
                 }
                 .header nav li {
-                    border-left: 2px solid currentcolor;
                     display: inline;
-                    padding: 0.3em 0.5em;
-                }
-                .header nav li:first-child {
-                    border-left: none;
+                    margin-left: 0.5em;
                 }
 
 .content { /* On body > div */
