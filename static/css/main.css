@@ -260,6 +260,28 @@ a {
         padding: 0.5em;
         }
 
+.footer {
+    font-family: "Quicksand", sans-serif;
+    line-height: 1em;
+    margin: 0 auto;
+    max-width: 40em;
+    padding: 1em 2em 3em;
+    }
+    .footer footer {
+        }
+        .footer footer a {
+            display: block;
+            float: left;
+            text-align: center;
+            width: 33%;
+            }
+            .footer footer a:hover {
+                border: none;
+            }
+        .footer footer i {
+            display: block;
+            margin-bottom: 0.1em;
+        }
 
 
 
