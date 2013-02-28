@@ -115,25 +115,6 @@ a {
         color: #1C7BBB;
     }
 
-    a[href*="picasaweb"],
-    a[href^="https://github.com"] {
-    /* Bug: http://stackoverflow.com/questions/8951822
-            The attribute-selector doesn't work when style is applied with :before only, 
-            causing all <a>s to be targetted. Adding any style for the element without 
-            the pseudo-element seems to fix this. */
-        font-family: inherit;
-        }
-        a[href*="picasaweb"]:before {
-            content: "\f03e"; /* FontAwesome icon-picture */
-            font-family: "FontAwesome";
-            padding-right: 0.3em;
-        }
-        a[href^="https://github.com"]:before {
-            content: "\f09b"; /* FontAwesome icon-github */
-            font-family: "FontAwesome";
-            padding-right: 0.3em;
-        }
-
 .header { /* On body > div */
     background-color: rgba(68,69,59,0.90); /* Dev #44453B */
     color: white; /* Dev */
@@ -257,6 +238,24 @@ a {
         .single img {
             max-width: 100%;
         }
+        .single a[href*="picasaweb"],
+        .single a[href^="https://github.com"] {
+        /* Bug: http://stackoverflow.com/questions/8951822
+                The attribute-selector doesn't work when style is applied with :before only, 
+                causing all <a>s to be targetted. Adding any style for the element without 
+                the pseudo-element seems to fix this. */
+            font-family: inherit;
+            }
+            .single a[href*="picasaweb"]:before {
+                content: "\f03e"; /* FontAwesome icon-picture */
+                font-family: "FontAwesome";
+                padding-right: 0.3em;
+            }
+            .single a[href^="https://github.com"]:before {
+                content: "\f09b"; /* FontAwesome icon-github */
+                font-family: "FontAwesome";
+                padding-right: 0.3em;
+            }
     .comments { /* On body > .content > article > section */
         border-top: 1px dashed #CCCCCC;
         margin: 0 -0.5em; /* Extend border left/right */
