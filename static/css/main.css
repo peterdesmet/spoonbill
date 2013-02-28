@@ -254,11 +254,14 @@ a {
                 .tags li:last-child:after {
                     content: ".";
                 }
+        .post img {
+            max-width: 100%;
+        }
     .comments { /* On body > .content > article > section */
         border-top: 1px dashed #CCCCCC;
         margin: 0 -0.5em; /* Extend border left/right */
         padding: 0.5em;
-        }
+    }
 
 .footer {
     font-family: "Quicksand", sans-serif;
