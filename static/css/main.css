@@ -224,13 +224,13 @@ a {
                 .tags li {
                     display: inline;
                     list-style: none;
-                }
-                .tags li:after {
-                    content: ", ";
-                }
-                .tags li:last-child:after {
-                    content: ".";
-                }
+                    }
+                    .tags li:after {
+                        content: ", ";
+                    }
+                    .tags li:last-child:after {
+                        content: ".";
+                    }
         .single img {
             max-width: 100%;
         }
