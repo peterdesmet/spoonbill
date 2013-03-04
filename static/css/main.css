@@ -162,7 +162,10 @@ a {
                 .header nav li {
                     display: inline;
                     margin-left: 0.5em;
-                }
+                    }
+                    .header nav li.active a {
+                        border-bottom: 1px dotted currentcolor;
+                    }
 
 .content { /* On body > div */
     /*border: 1px dashed #83847B;*/
