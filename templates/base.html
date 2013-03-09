@@ -77,11 +77,13 @@
         {% endblock %}
         </div>
         <div class="footer">
+        {% block footer %}
             <footer class="clearfix">
                 <a href="{{ TWITTER_URL }}"><i class="icon-twitter icon-3x"></i> Follow me on Twitter</a>
                 <a href="{{ GITHUB_URL }}"><i class="icon-github icon-3x"></i> My precious GitHub repositories</a>
                 <a href="{{ FEED_ALL_RSS }}"><i class="icon-rss icon-3x"></i> Subscribe to updates</a>
             </footer>
+        {% endblock %}
         </div>
 
         <!-- Scripts -->
