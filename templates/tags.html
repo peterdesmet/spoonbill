@@ -2,7 +2,7 @@
 
 {% block title %}Tags - {{ SITENAME }}{% endblock %}
 {% block content %}
-<h2>Tags</h2>
+<h1>Tags</h1>
 <ul>
 {% for tag, articles in tags %}
     <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
