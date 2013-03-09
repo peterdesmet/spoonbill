@@ -3,15 +3,15 @@
 {% block title %}Archives - {{ SITENAME }}{% endblock %}
 {% block content %}
 <h1>Archives</h1>
-<ol>
+<ol class="index">
 {% for article in dates %}
     <li>
-        <article>
-            <header>
-                <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
-            </header>
-            <div>{{ article.summary }}</div>
+        <article class="clearfix">
             <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time>
+            <header>
+                <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+            </header>
+            <p>{{ article.summary }}</p>
         </article>
     </li>
 {% endfor %}
