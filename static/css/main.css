@@ -249,6 +249,30 @@ a {
                 font-family: "FontAwesome";
                 padding-right: 0.3em;
             }
+    .paginator { /* On body > .content */
+        color: #AAAAAA;
+        line-height: 1.2em;
+        margin-bottom: 1em;
+        text-align: center;
+        }
+        .paginator a {
+            color: #AAAAAA;
+            display: inline-block;
+            font-size: 1;
+            padding: 0 1em;
+            }
+            .paginator a:hover {
+                border: none;
+                color: #555555;
+            }
+            .paginator a span {
+                display: none;
+            }
+        .paginator > span {
+            font-size: 0.8em;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+        }
     .comments { /* On body > .content > article > section */
         border-top: 1px dashed #CCCCCC;
         margin: 0 -0.5em; /* Extend border left/right */
