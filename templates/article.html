@@ -3,9 +3,9 @@
 {% block title %}{{ article.title }} - {{ SITENAME }}{% endblock %}
 {% block content %}
 <article>
-	<section>
+	<section class="single">
         <header>
-            <h2>{{ article.title }}</h2>
+            <h1>{{ article.title }}</h1>
         </header>
         <footer>
             <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time>
@@ -14,14 +14,21 @@
                 By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
             </address>
             {% endif %}
+            {% if article.tags %}
+            <ul class="tags">Tagged: 
+                {% for tag in article.tags %}
+                <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
         </footer>
         <div>
             {{ article.content }}
         </div>
     </section>
-    <section>
+    <section class="comments">
         <header>
-            <h3>Comments</h3>
+            <h2>Comments</h2>
         </header>
         {% include "disqus.html" %}
     </section>

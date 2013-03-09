@@ -3,11 +3,13 @@
 {% block title %}{{ page.title }} - {{ SITENAME }}{%endblock%}
 {% block content %}
 <article>
-    <header>
-        <h2>{{ page.title }}</h2>
-    </header>
-    <div>
-        {{ page.content }}
-    </div>
+    <section class="single">
+        <header>
+            <h1>{{ page.title }}</h1>
+        </header>
+        <div>
+            {{ page.content }}
+        </div>
+    </section>
 </article>
 {% endblock %}

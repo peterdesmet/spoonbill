@@ -15,6 +15,11 @@
 
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/normalize.css">
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700|Quicksand:400">
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome.min.css">
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome-ie7.min.css">
+        <![endif]-->
         <script src="{{ SITEURL }}/theme/js/vendor/modernizr-2.6.2.min.js"></script>
 
         {% if FEED_ALL_ATOM %}
@@ -49,27 +54,37 @@
         <![endif]-->
 
         <!-- Content -->
-        <header>
-            <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a> <span>{{ SITESUBTITLE }}</span></h1>
-        </header>
-        <nav>
-            <ul>
-            {% for title, link in MENUITEMS %}
-                <li><a href="{{ link }}">{{ title }}</a></li>
-            {% endfor %}
-            {% if DISPLAY_PAGES_ON_MENU %}
-                {% for p in PAGES %}
-                <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-                {% endfor %}
-            {% endif %}
-            </ul>
-        </nav>
-        <div>
+        <div class="header">
+            <header class="clearfix">
+                <h2><a href="{{ SITEURL }}">{{ SITENAME }}</a></h2>
+                <h3>{{ SITESUBTITLE }}</h3>
+                <nav>
+                    <ul>
+                    {% for title, link in MENUITEMS %}
+                        <li><a href="{{ link }}">{{ title }}</a></li>
+                    {% endfor %}
+                    {% if DISPLAY_PAGES_ON_MENU %}
+                        {% for p in PAGES %}
+                        <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                        {% endfor %}
+                    {% endif %}
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="content">
         {% block content %}
         {% endblock %}
         </div>
-        <footer>
-        </footer>
+        <div class="footer">
+        {% block footer %}
+            <footer class="clearfix">
+                <a href="{{ TWITTER_URL }}"><i class="icon-twitter icon-3x"></i> Follow me on Twitter</a>
+                <a href="{{ GITHUB_URL }}"><i class="icon-github icon-3x"></i> My precious GitHub repositories</a>
+                <a href="{{ FEED_ALL_RSS }}"><i class="icon-rss icon-3x"></i> Subscribe to updates</a>
+            </footer>
+        {% endblock %}
+        </div>
 
         <!-- Scripts -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
