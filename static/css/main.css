@@ -108,13 +108,13 @@ a {
     text-decoration: none;
     }
     a:hover {
-        color: #105F9E;
+        color: #185288;
         border-bottom: 1px dotted currentcolor;
     }
 
 .header { /* On body > div */
-    background-color: rgba(68,69,59,0.90); /* Dev #44453B */
-    color: white; /* Dev */
+    background-color: rgba(0, 65, 125, 0.9); /* On a white background, this creates #185288, the a:hover color; */
+    color: white;
     font-family: "Quicksand", sans-serif;
     position: fixed;
     text-transform: uppercase;
