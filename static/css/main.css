@@ -85,6 +85,15 @@ a {
         border-bottom: 1px dotted currentcolor;
     }
 
+pre {
+    background-color: #F5F5F5;
+    border: 1px solid #CCCCCC;
+    border-radius: 0.3em;
+    font-size: 0.8em;
+    overflow: auto;
+    padding: 1em;
+}
+
 .header { /* On body > div */
     background-color: rgba(0, 65, 125, 0.9); /* On a white background, this creates #185288, the a:hover color; */
     color: white;
