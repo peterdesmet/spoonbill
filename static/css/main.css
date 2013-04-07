@@ -442,19 +442,6 @@ a {
 .header {
     position: relative;
     }
-    .header h2 {
-        width: 75%;
-    }
-    .header nav {
-        width: 25%;
-        }
-        .header nav:before {
-            content: "\f0c9";
-            font-family: "FontAwesome";
-        }
-        .header nav ul {
-            display: none;
-        }
 
 .content {
     margin-top: 0;
