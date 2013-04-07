@@ -1,14 +1,6 @@
-/*
- * HTML5 Boilerplate
- *
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+/* This CSS is based on HTML5 Boilerplate: https://github.com/h5bp/html5-boilerplate */
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+/* ========== h5bp: Opinionated defaults ========== */
 
 html,
 button,
@@ -23,26 +15,17 @@ body {
     line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate.
- * Customize the background color to match your design.
- */
-
+/* Remove text-shadow in selection highlight: h5bp.com/i */
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
+/* A better looking default horizontal rule */
 hr {
     display: block;
     height: 1px;
@@ -52,35 +35,25 @@ hr {
     padding: 0;
 }
 
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-
+/* Remove the gap between images and the bottom of their containers: h5bp.com/i/440 */
 img {
     vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
+/* Remove default fieldset styles. */
 fieldset {
     border: 0;
     margin: 0;
     padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
+/* Allow only vertical resizing of textareas. */
 textarea {
     resize: vertical;
 }
 
-/* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
+
+/* ========== h5bp: Chrome frame prompt ========== */
 
 .chromeframe {
     margin: 0.2em 0;
@@ -89,15 +62,15 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 
-body { /* Dev: declare higher */
+/* ========== h5bp: My custom styles ========== */
+
+body {
     color: #31322A;
     font-family: "Open Sans", sans-serif;
     font-size: 1.2em;
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Quicksand", sans-serif;
     font-weight: normal;
@@ -165,7 +138,6 @@ a {
                     }
 
 .content { /* On body > div */
-    /*border: 1px dashed #83847B;*/
     line-height: 1.6;
     margin: 0 auto;
     margin-top: 2.5em;
@@ -233,10 +205,10 @@ a {
         }
         .single a[href*="picasaweb"],
         .single a[href^="https://github.com"] {
-        /* Bug: http://stackoverflow.com/questions/8951822
-                The attribute-selector doesn't work when style is applied with :before only, 
-                causing all <a>s to be targetted. Adding any style for the element without 
-                the pseudo-element seems to fix this. */
+            /* Bug: http://stackoverflow.com/questions/8951822
+               The attribute-selector doesn't work when style is applied with :before only, 
+               causing all <a>s to be targetted. Adding any style for the element without 
+               the pseudo-element seems to fix this. */
             font-family: inherit;
             }
             .single a[href*="picasaweb"]:before {
@@ -279,7 +251,7 @@ a {
         padding: 0.5em;
     }
 
-.footer {
+.footer { /* On body > div */
     font-family: "Quicksand", sans-serif;
     line-height: 1em;
     margin: 0 auto;
@@ -303,20 +275,48 @@ a {
         }
 
 
+/* ========== My media queries ========== */
+
+@media only screen and (max-width: 44em) {
+/* Medium size: hide header subtitle and post descriptions. */
+
+    .header {
+        }
+        .header h2,
+        .header nav {
+            width: 50%;
+        }
+        .header h3 {
+            display: none;
+        }
+
+    .index {
+        }
+        .index p {
+            display: none; /* Hide description */
+        }
+}
+
+@media only screen and (max-width: 36em) {
+/* Small size: hide post dates and fix header. */
+
+    .header {
+        position: relative;
+        }
+
+    .content {
+        margin-top: 0;
+    }
+
+    .index {
+        }
+        .index time {
+            display: none;
+        }
+}
 
 
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Image replacement
- */
+/* ========== h5bp: Helper classes ========== */
 
 .ir {
     background-color: transparent;
@@ -324,28 +324,21 @@ a {
     overflow: hidden;
     /* IE 6/7 fallback */
     *text-indent: -9999px;
-}
+    }
+    .ir:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 150%;
+    }
 
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
+/* Hide from both screenreaders and browsers: h5bp.com/u */
 .hidden {
     display: none !important;
     visibility: hidden;
 }
 
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -355,117 +348,49 @@ a {
     padding: 0;
     position: absolute;
     width: 1px;
-}
+    }
+    /* Extends the .visuallyhidden class to allow the element to be focusable 
+       when navigated to via the keyboard: h5bp.com/p */
+    .visuallyhidden.focusable:active,
+    .visuallyhidden.focusable:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
 
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
+/* Hide visually and from screenreaders, but maintain layout */
 .invisible {
     visibility: hidden;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
+/* Clearfix: contain floats
+   For modern browsers
+   1. The space content is one way to avoid an Opera bug when the
+      `contenteditable` attribute is included anywhere else in the document.
+      Otherwise it causes space to appear at the top and bottom of elements
+      that receive the `clearfix` class.
+   2. The use of `table` rather than `block` is only necessary if using
+      `:before` to contain the top-margins of child elements. */
 .clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (max-width: 44em) {
-/* Medium size: hide header subtitle and post descriptions. */
-
-.header {
+    *zoom: 1; /* For IE 6/7 only: include this rule to trigger hasLayout and contain floats. */
     }
-    .header h2,
-    .header nav {
-        width: 50%;
+    .clearfix:before,
+    .clearfix:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
     }
-    .header h3 {
-        display: none;
+    .clearfix:after {
+        clear: both;
     }
 
-.index {
-    }
-    .index p {
-        display: none; /* Hide description */
-    }
 
-@media only screen and (max-width: 36em) {
-/* Small size: hide post dates and fix header. */
-
-.header {
-    position: relative;
-    }
-
-.content {
-    margin-top: 0;
-}
-
-.index {
-    }
-    .index time {
-        display: none;
-    }
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
+/* ========== h5bp: Print styles ========== */
 
 @media print {
+/* Inlined to avoid required HTTP connection: h5bp.com/r */
     * {
         background: transparent !important;
         color: #000 !important; /* Black prints faster: h5bp.com/s */
@@ -477,7 +402,6 @@ a {
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
@@ -486,10 +410,7 @@ a {
         content: " (" attr(title) ")";
     }
 
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
+    /* Don't show links for images, or javascript/internal links */
     .ir a:after,
     a[href^="javascript:"]:after,
     a[href^="#"]:after {
