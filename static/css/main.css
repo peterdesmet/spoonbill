@@ -417,9 +417,54 @@ a {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 44em) {
+/* Medium size: hide header subtitle and post descriptions. */
+
+.header {
+    }
+    .header h2,
+    .header nav {
+        width: 50%;
+    }
+    .header h3 {
+        display: none;
+    }
+
+.index {
+    }
+    .index p {
+        display: none; /* Hide description */
+    }
+
+@media only screen and (max-width: 36em) {
+/* Small size: hide post dates and fix header. */
+
+.header {
+    position: relative;
+    }
+    .header h2 {
+        width: 75%;
+    }
+    .header nav {
+        width: 25%;
+        }
+        .header nav:before {
+            content: "\f0c9";
+            font-family: "FontAwesome";
+        }
+        .header nav ul {
+            display: none;
+        }
+
+.content {
+    margin-top: 0;
 }
+
+.index {
+    }
+    .index time {
+        display: none;
+    }
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
