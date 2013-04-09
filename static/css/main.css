@@ -28,7 +28,7 @@ body {
 /* A better looking default horizontal rule */
 hr {
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #CCCCCC;
     display: block;
     height: 1px;
     margin: 1em 0;
@@ -71,11 +71,6 @@ body {
     font-size: 1.2em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Quicksand", sans-serif;
-    font-weight: normal;
-}
-
 a {
     color: #1C7BBB;
     text-decoration: none;
@@ -92,6 +87,9 @@ pre {
     font-size: 0.8em;
     overflow: auto;
     padding: 1em;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: normal;
 }
 
 .header { /* On body > div */
@@ -154,9 +152,10 @@ pre {
     padding: 2em;
     }
     .content h1 {
-        line-height: 1.1em;
-        margin-top: 0.5em;        
+        line-height: 1.2em;
+        margin-top: 0.5em;  
     }
+
     .index { /* On body > .content > ol */
         list-style-type: none;
         margin: 0;
@@ -176,9 +175,10 @@ pre {
                 margin-left: 1em;
                 padding: 0.3em;
             }
+
     .single { /* On body > .content > article > section */
         }
-        .single footer {
+        .single footer { /* Post metadata */
             color: #AAAAAA;
             font-size: 0.8em;
             letter-spacing: 0.3em;
@@ -209,9 +209,6 @@ pre {
                     .tags li:last-child:after {
                         content: ".";
                     }
-        .single img {
-            max-width: 100%;
-        }
         .single a[href*="picasaweb"],
         .single a[href^="https://github.com"] {
             /* Bug: http://stackoverflow.com/questions/8951822
@@ -230,6 +227,9 @@ pre {
                 font-family: "FontAwesome";
                 padding-right: 0.3em;
             }
+        .single img {
+            max-width: 100%;
+        }
     .paginator { /* On body > .content */
         color: #AAAAAA;
         line-height: 1.2em;
@@ -254,6 +254,7 @@ pre {
             letter-spacing: 0.3em;
             text-transform: uppercase;
         }
+
     .comments { /* On body > .content > article > section */
         border-top: 1px dashed #CCCCCC;
         margin: 0 -0.5em; /* Extend border left/right */
