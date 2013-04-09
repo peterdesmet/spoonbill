@@ -362,14 +362,14 @@ pre {
 .codehilite .s { color: #D39B3C; } /* Literal.String */
 .codehilite .na { color: #CCCCCC; } /* Name.Attribute */
 .codehilite .nb { color: #A780FF; } /* Name.Builtin */
-.codehilite .nc { color: #5DA214; text-decoration: underline; } /* Name.Class */
+.codehilite .nc { color: #5DA214; } /* Name.Class */
 .codehilite .no { color: #40FFFF; } /* Name.Constant */
 .codehilite .nd { color: #FFA500; } /* Name.Decorator */
 .codehilite .ni { color: #D0D0D0; } /* Name.Entity */
 .codehilite .ne { color: #CCCCCC; } /* Name.Exception */
 .codehilite .nf { color: #5DA214; } /* Name.Function */
 .codehilite .nl { color: #D0D0D0; } /* Name.Label */
-.codehilite .nn { color: #5DA214; text-decoration: underline; } /* Name.Namespace */
+.codehilite .nn { color: #5DA214; } /* Name.Namespace */
 .codehilite .nx { color: #D0D0D0; } /* Name.Other */
 .codehilite .py { color: #D0D0D0; } /* Name.Property */
 .codehilite .nt { color: #639DC4; font-weight: bold; } /* Name.Tag */
