@@ -80,13 +80,6 @@ a {
         color: #185288;
     }
 
-pre {
-    background-color: #272821;
-    border: 1px solid #CCCCCC;
-    border-radius: 0.3em;
-    font-size: 0.8em;
-    overflow: auto;
-    padding: 1em;
 h1, h2, h3, h4, h5, h6 {
     font-family: "Quicksand", sans-serif;
     font-weight: normal;
@@ -227,9 +220,81 @@ h1, h2, h3, h4, h5, h6 {
                 font-family: "FontAwesome";
                 padding-right: 0.3em;
             }
+        .single h2 {
+            font-size: 1.6em;
+            line-height: 1.2em;
+        }
+        .single h3 {
+            border-bottom: 1px solid currentcolor;
+            color: #555555;
+            font-size: 1.4em;
+            line-height: 1.2em;
+            padding-bottom: 0.2em;
+        }
+        .single h4 {
+            font-size: 1.2em;
+            font-style: italic;
+            line-height: 1.2em;
+        }
         .single img {
             max-width: 100%;
         }
+        .single blockquote {
+            border-left: 0.3em solid #CCCCCC;
+            color: #AAAAAA;
+            padding: 0 1em;
+        }
+        .single code {
+            background-color: #272821;
+            border-radius: 0.3em;
+            color: #D0D0D0;
+            font-size: 0.8em;
+            overflow: auto;
+            padding: 0.2em 0.5em;
+            white-space: nowrap;
+        }
+        .single pre {
+            background-color: #272821;
+            border-radius: 0.3em;
+            color: #D0D0D0;
+            font-size: 0.8em;
+            overflow: auto;
+            padding: 1em;
+            }
+            .single pre code {
+                border: none;
+                background: transparent;
+                padding: 0;
+                white-space: pre;
+            }
+        .single table {
+            border-collapse: collapse;
+            padding: 0;
+            }
+            .single table tr {
+                margin: 0;
+                padding: 0;
+            }
+            .single table tr:nth-child(2n) {
+                background-color: #F0F0F0;
+            }
+            .single table tr th {
+                border: 1px solid #CCCCCC;
+                font-weight: bold;
+                margin: 0;
+                padding: 0.3em 1em;
+            }
+            .single table tr td {
+                border: 1px solid #CCCCCC;
+                margin: 0;
+                padding: 0.3em 1em;
+            }
+        .single .footnote hr {
+            border: none;
+            border-top: 1px dashed #CCCCCC;
+            margin: 0 -0.5em; /* Extend border left/right */
+        }
+
     .paginator { /* On body > .content */
         color: #AAAAAA;
         line-height: 1.2em;
