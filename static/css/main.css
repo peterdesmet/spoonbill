@@ -364,12 +364,9 @@ h1, h2, h3, h4, h5, h6 {
         .header h3 {
             display: none;
         }
-
-    .index {
-        }
-        .index p {
-            display: none; /* Hide description */
-        }
+    .index p {
+        display: none; /* Hide description */
+    }
 }
 
 @media only screen and (max-width: 36em) {
@@ -377,17 +374,16 @@ h1, h2, h3, h4, h5, h6 {
 
     .header {
         position: relative;
-        }
-
+    }
     .content {
         margin-top: 0;
     }
-
-    .index {
-        }
-        .index time {
-            display: none;
-        }
+    .index time {
+        display: none;
+    }
+    .footer span {
+        display: none;
+    }
 }
 
 
