@@ -86,7 +86,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header { /* On body > div */
-    background-color: rgba(0, 65, 125, 0.9); /* On a white background, this creates #185288, the a:hover color; */
+    background-color: #185288;
+    background-color: rgba(0, 65, 125, 0.9);  On a white background, this creates #185288, the a:hover color; 
     color: white;
     font-family: "Quicksand", sans-serif;
     position: fixed;
@@ -203,7 +204,9 @@ h1, h2, h3, h4, h5, h6 {
                         content: ".";
                     }
         .single a[href*="picasaweb"],
-        .single a[href^="https://github.com"] {
+        .single a[href^="https://github.com"],
+        .single a[href*="twitter.com"],
+        .single a[href*="linkedin.com"] {
             /* Bug: http://stackoverflow.com/questions/8951822
                The attribute-selector doesn't work when style is applied with :before only, 
                causing all <a>s to be targetted. Adding any style for the element without 
@@ -217,6 +220,16 @@ h1, h2, h3, h4, h5, h6 {
             }
             .single a[href^="https://github.com"]:before {
                 content: "\f09b"; /* FontAwesome icon-github */
+                font-family: "FontAwesome";
+                padding-right: 0.3em;
+            }
+            .single a[href*="twitter.com"]:before {
+                content: "\f081"; /* FontAwesome icon-twitter-sign */
+                font-family: "FontAwesome";
+                padding-right: 0.3em;
+            }
+            .single a[href*="linkedin.com"]:before {
+                content: "\f08c"; /* FontAwesome icon-linkedin-sign */
                 font-family: "FontAwesome";
                 padding-right: 0.3em;
             }
@@ -304,7 +317,7 @@ h1, h2, h3, h4, h5, h6 {
         .paginator a {
             color: #AAAAAA;
             display: inline-block;
-            font-size: 1;
+            font-size: 1em;
             padding: 0 1em;
             }
             .paginator a:hover {
@@ -364,12 +377,9 @@ h1, h2, h3, h4, h5, h6 {
         .header h3 {
             display: none;
         }
-
-    .index {
-        }
-        .index p {
-            display: none; /* Hide description */
-        }
+    .index p {
+        display: none; /* Hide description */
+    }
 }
 
 @media only screen and (max-width: 36em) {
@@ -377,17 +387,16 @@ h1, h2, h3, h4, h5, h6 {
 
     .header {
         position: relative;
-        }
-
+    }
     .content {
         margin-top: 0;
     }
-
-    .index {
-        }
-        .index time {
-            display: none;
-        }
+    .index time {
+        display: none;
+    }
+    .footer span {
+        display: none;
+    }
 }
 
 
