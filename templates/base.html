@@ -10,9 +10,9 @@
         <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        <meta name="google-site-verification" content="{{ GOOGLE_WEBMASTER }}" />
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico">
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/normalize.css">
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700|Quicksand:400">
@@ -79,9 +79,9 @@
         <div class="footer">
         {% block footer %}
             <footer class="clearfix">
-                <a href="{{ TWITTER_URL }}"><i class="icon-twitter icon-3x"></i> Follow me on Twitter</a>
-                <a href="{{ GITHUB_URL }}"><i class="icon-github icon-3x"></i> My precious GitHub repositories</a>
-                <a href="{{ FEED_ALL_RSS }}"><i class="icon-rss icon-3x"></i> Subscribe to updates</a>
+                <a href="{{ TWITTER_URL }}"><i class="icon-twitter icon-3x"></i> <span>Follow me on Twitter</span></a>
+                <a href="{{ GITHUB_URL }}"><i class="icon-github icon-3x"></i> <span>My precious GitHub repositories</span></a>
+                <a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}"><i class="icon-rss icon-3x"></i> <span>Subscribe to updates</span></a>
             </footer>
         {% endblock %}
         </div>
