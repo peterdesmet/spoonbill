@@ -1,14 +1,6 @@
-/*
- * HTML5 Boilerplate
- *
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+/* This CSS is based on HTML5 Boilerplate: https://github.com/h5bp/html5-boilerplate */
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+/* ========== h5bp: Opinionated defaults ========== */
 
 html,
 button,
@@ -23,84 +15,60 @@ body {
     line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate.
- * Customize the background color to match your design.
- */
-
+/* Remove text-shadow in selection highlight: h5bp.com/i */
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
+/* A better looking default horizontal rule */
 hr {
+    border: 0;
+    border-top: 1px solid #CCCCCC;
     display: block;
     height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
 }
 
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-
+/* Remove the gap between images and the bottom of their containers: h5bp.com/i/440 */
 img {
     vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
+/* Remove default fieldset styles. */
 fieldset {
     border: 0;
     margin: 0;
     padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
+/* Allow only vertical resizing of textareas. */
 textarea {
     resize: vertical;
 }
 
-/* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
+
+/* ========== h5bp: Chrome frame prompt ========== */
 
 .chromeframe {
-    margin: 0.2em 0;
     background: #ccc;
     color: #000;
+    margin: 0.2em 0;
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 
-body { /* Dev: declare higher */
+/* ========== h5bp: My custom styles ========== */
+
+body {
     color: #31322A;
     font-family: "Open Sans", sans-serif;
     font-size: 1.2em;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Quicksand", sans-serif;
-    font-weight: normal;
 }
 
 a {
@@ -108,9 +76,14 @@ a {
     text-decoration: none;
     }
     a:hover {
-        color: #185288;
         border-bottom: 1px dotted currentcolor;
+        color: #185288;
     }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: normal;
+}
 
 .header { /* On body > div */
     background-color: rgba(0, 65, 125, 0.9); /* On a white background, this creates #185288, the a:hover color; */
@@ -165,7 +138,6 @@ a {
                     }
 
 .content { /* On body > div */
-    /*border: 1px dashed #83847B;*/
     line-height: 1.6;
     margin: 0 auto;
     margin-top: 2.5em;
@@ -173,9 +145,10 @@ a {
     padding: 2em;
     }
     .content h1 {
-        line-height: 1.1em;
-        margin-top: 0.5em;        
+        line-height: 1.2em;
+        margin-top: 0.5em;  
     }
+
     .index { /* On body > .content > ol */
         list-style-type: none;
         margin: 0;
@@ -195,9 +168,10 @@ a {
                 margin-left: 1em;
                 padding: 0.3em;
             }
+
     .single { /* On body > .content > article > section */
         }
-        .single footer {
+        .single footer { /* Post metadata */
             color: #AAAAAA;
             font-size: 0.8em;
             letter-spacing: 0.3em;
@@ -228,15 +202,12 @@ a {
                     .tags li:last-child:after {
                         content: ".";
                     }
-        .single img {
-            max-width: 100%;
-        }
         .single a[href*="picasaweb"],
         .single a[href^="https://github.com"] {
-        /* Bug: http://stackoverflow.com/questions/8951822
-                The attribute-selector doesn't work when style is applied with :before only, 
-                causing all <a>s to be targetted. Adding any style for the element without 
-                the pseudo-element seems to fix this. */
+            /* Bug: http://stackoverflow.com/questions/8951822
+               The attribute-selector doesn't work when style is applied with :before only, 
+               causing all <a>s to be targetted. Adding any style for the element without 
+               the pseudo-element seems to fix this. */
             font-family: inherit;
             }
             .single a[href*="picasaweb"]:before {
@@ -249,6 +220,81 @@ a {
                 font-family: "FontAwesome";
                 padding-right: 0.3em;
             }
+        .single h2 {
+            font-size: 1.6em;
+            line-height: 1.2em;
+        }
+        .single h3 {
+            border-bottom: 1px solid currentcolor;
+            color: #555555;
+            font-size: 1.4em;
+            line-height: 1.2em;
+            padding-bottom: 0.2em;
+        }
+        .single h4 {
+            font-size: 1.2em;
+            font-style: italic;
+            line-height: 1.2em;
+        }
+        .single img {
+            max-width: 100%;
+        }
+        .single blockquote {
+            border-left: 0.3em solid #CCCCCC;
+            color: #AAAAAA;
+            padding: 0 1em;
+        }
+        .single code {
+            background-color: #272821;
+            border-radius: 0.3em;
+            color: #D0D0D0;
+            font-size: 0.8em;
+            overflow: auto;
+            padding: 0.2em 0.5em;
+            white-space: nowrap;
+        }
+        .single pre {
+            background-color: #272821;
+            border-radius: 0.3em;
+            color: #D0D0D0;
+            font-size: 0.8em;
+            overflow: auto;
+            padding: 1em;
+            }
+            .single pre code {
+                border: none;
+                background: transparent;
+                padding: 0;
+                white-space: pre;
+            }
+        .single table {
+            border-collapse: collapse;
+            padding: 0;
+            }
+            .single table tr {
+                margin: 0;
+                padding: 0;
+            }
+            .single table tr:nth-child(2n) {
+                background-color: #F0F0F0;
+            }
+            .single table tr th {
+                border: 1px solid #CCCCCC;
+                font-weight: bold;
+                margin: 0;
+                padding: 0.3em 1em;
+            }
+            .single table tr td {
+                border: 1px solid #CCCCCC;
+                margin: 0;
+                padding: 0.3em 1em;
+            }
+        .single .footnote hr {
+            border: none;
+            border-top: 1px dashed #CCCCCC;
+            margin: 0 -0.5em; /* Extend border left/right */
+        }
+
     .paginator { /* On body > .content */
         color: #AAAAAA;
         line-height: 1.2em;
@@ -273,13 +319,14 @@ a {
             letter-spacing: 0.3em;
             text-transform: uppercase;
         }
+
     .comments { /* On body > .content > article > section */
         border-top: 1px dashed #CCCCCC;
         margin: 0 -0.5em; /* Extend border left/right */
         padding: 0.5em;
     }
 
-.footer {
+.footer { /* On body > div */
     font-family: "Quicksand", sans-serif;
     line-height: 1em;
     margin: 0 auto;
@@ -303,20 +350,121 @@ a {
         }
 
 
+/* ========== My media queries ========== */
+
+@media only screen and (max-width: 44em) {
+/* Medium size: hide header subtitle and post descriptions. */
+
+    .header {
+        }
+        .header h2,
+        .header nav {
+            width: 50%;
+        }
+        .header h3 {
+            display: none;
+        }
+
+    .index {
+        }
+        .index p {
+            display: none; /* Hide description */
+        }
+}
+
+@media only screen and (max-width: 36em) {
+/* Small size: hide post dates and fix header. */
+
+    .header {
+        position: relative;
+        }
+
+    .content {
+        margin-top: 0;
+    }
+
+    .index {
+        }
+        .index time {
+            display: none;
+        }
+}
 
 
+/* ========== Pygments: Syntax highlighting based on native.css ========== */
+
+.codehilite .hll { background-color: #404040; }
+.codehilite .c { color: #7C7C70; font-style: italic; } /* Comment */
+.codehilite .err { color: #a61717; background-color: #E3D2D2; } /* Error */
+.codehilite .g { color: #D0D0D0; } /* Generic */
+.codehilite .k { color: #C0C0C0; font-weight: bold; } /* Keyword */
+.codehilite .l { color: #D0D0D0; } /* Literal */
+.codehilite .n { color: #D0D0D0; } /* Name */
+.codehilite .o { color: #D0D0D0; } /* Operator */
+.codehilite .x { color: #D0D0D0; } /* Other */
+.codehilite .p { color: #D0D0D0; } /* Punctuation */
+.codehilite .cm { color: #7C7C70; font-style: italic; } /* Comment.Multiline */
+.codehilite .cp { color: #CD2828; font-weight: bold; } /* Comment.Preproc */
+.codehilite .c1 { color: #7C7C70; font-style: italic; } /* Comment.Single */
+.codehilite .cs { color: #E50808; font-weight: bold; background-color: #520000; } /* Comment.Special */
+.codehilite .gd { color: #D22323; } /* Generic.Deleted */
+.codehilite .ge { color: #D0D0D0; font-style: italic; } /* Generic.Emph */
+.codehilite .gr { color: #D22323; } /* Generic.Error */
+.codehilite .gh { color: #FFFFFF; font-weight: bold; } /* Generic.Heading */
+.codehilite .gi { color: #589819; } /* Generic.Inserted */
+.codehilite .go { color: #CCCCCC; } /* Generic.Output */
+.codehilite .gp { color: #7C7C70; } /* Generic.Prompt */
+.codehilite .gs { color: #D0D0D0; font-weight: bold; } /* Generic.Strong */
+.codehilite .gu { color: #FFFFFF; text-decoration: underline; } /* Generic.Subheading */
+.codehilite .gt { color: #D22323; } /* Generic.Traceback */
+.codehilite .kc { color: #C0C0C0; font-weight: bold; } /* Keyword.Constant */
+.codehilite .kd { color: #C0C0C0; font-weight: bold; } /* Keyword.Declaration */
+.codehilite .kn { color: #C0C0C0; font-weight: bold; } /* Keyword.Namespace */
+.codehilite .kp { color: #C0C0C0; } /* Keyword.Pseudo */
+.codehilite .kr { color: #C0C0C0; font-weight: bold; } /* Keyword.Reserved */
+.codehilite .kt { color: #C0C0C0; font-weight: bold; } /* Keyword.Type */
+.codehilite .ld { color: #D0D0D0;} /* Literal.Date */
+.codehilite .m { color: #3EBEC4; } /* Literal.Number */
+.codehilite .s { color: #D39B3C; } /* Literal.String */
+.codehilite .na { color: #CCCCCC; } /* Name.Attribute */
+.codehilite .nb { color: #A780FF; } /* Name.Builtin */
+.codehilite .nc { color: #5DA214; } /* Name.Class */
+.codehilite .no { color: #40FFFF; } /* Name.Constant */
+.codehilite .nd { color: #FFA500; } /* Name.Decorator */
+.codehilite .ni { color: #D0D0D0; } /* Name.Entity */
+.codehilite .ne { color: #CCCCCC; } /* Name.Exception */
+.codehilite .nf { color: #5DA214; } /* Name.Function */
+.codehilite .nl { color: #D0D0D0; } /* Name.Label */
+.codehilite .nn { color: #5DA214; } /* Name.Namespace */
+.codehilite .nx { color: #D0D0D0; } /* Name.Other */
+.codehilite .py { color: #D0D0D0; } /* Name.Property */
+.codehilite .nt { color: #639DC4; font-weight: bold; } /* Name.Tag */
+.codehilite .nv { color: #40FFFF; } /* Name.Variable */
+.codehilite .ow { color: #C0C0C0; font-weight: bold; } /* Operator.Word */
+.codehilite .w { color: #666666; } /* Text.Whitespace */
+.codehilite .mf { color: #3EBEC4; } /* Literal.Number.Float */
+.codehilite .mh { color: #3EBEC4; } /* Literal.Number.Hex */
+.codehilite .mi { color: #3EBEC4; } /* Literal.Number.Integer */
+.codehilite .mo { color: #3EBEC4; } /* Literal.Number.Oct */
+.codehilite .sb { color: #D39B3C; } /* Literal.String.Backtick */
+.codehilite .sc { color: #D39B3C; } /* Literal.String.Char */
+.codehilite .sd { color: #D39B3C; } /* Literal.String.Doc */
+.codehilite .s2 { color: #D39B3C; } /* Literal.String.Double */
+.codehilite .se { color: #D39B3C; } /* Literal.String.Escape */
+.codehilite .sh { color: #D39B3C; } /* Literal.String.Heredoc */
+.codehilite .si { color: #5DA214; } /* Literal.String.Interpol */
+.codehilite .sx { color: #FFA500; } /* Literal.String.Other */
+.codehilite .sr { color: #D39B3C; } /* Literal.String.Regex */
+.codehilite .s1 { color: #D39B3C; } /* Literal.String.Single */
+.codehilite .ss { color: #D39B3C; } /* Literal.String.Symbol */
+.codehilite .bp { color: #A780FF; } /* Name.Builtin.Pseudo */
+.codehilite .vc { color: #40FFFF; } /* Name.Variable.Class */
+.codehilite .vg { color: #40FFFF; } /* Name.Variable.Global */
+.codehilite .vi { color: #40FFFF; } /* Name.Variable.Instance */
+.codehilite .il { color: #3EBEC4; } /* Literal.Number.Integer.Long */
 
 
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Image replacement
- */
+/* ========== h5bp: Helper classes ========== */
 
 .ir {
     background-color: transparent;
@@ -324,28 +472,21 @@ a {
     overflow: hidden;
     /* IE 6/7 fallback */
     *text-indent: -9999px;
-}
+    }
+    .ir:before {
+        content: "";
+        display: block;
+        height: 150%;
+        width: 0;
+    }
 
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
+/* Hide from both screenreaders and browsers: h5bp.com/u */
 .hidden {
     display: none !important;
     visibility: hidden;
 }
 
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -355,89 +496,53 @@ a {
     padding: 0;
     position: absolute;
     width: 1px;
-}
+    }
+    /* Extends the .visuallyhidden class to allow the element to be focusable 
+       when navigated to via the keyboard: h5bp.com/p */
+    .visuallyhidden.focusable:active,
+    .visuallyhidden.focusable:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
 
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
+/* Hide visually and from screenreaders, but maintain layout */
 .invisible {
     visibility: hidden;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
+/* Clearfix: contain floats
+   For modern browsers
+   1. The space content is one way to avoid an Opera bug when the
+      `contenteditable` attribute is included anywhere else in the document.
+      Otherwise it causes space to appear at the top and bottom of elements
+      that receive the `clearfix` class.
+   2. The use of `table` rather than `block` is only necessary if using
+      `:before` to contain the top-margins of child elements. */
 .clearfix {
-    *zoom: 1;
-}
+    *zoom: 1; /* For IE 6/7 only: include this rule to trigger hasLayout and contain floats. */
+    }
+    .clearfix:before,
+    .clearfix:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+    .clearfix:after {
+        clear: both;
+    }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
+/* ========== h5bp: Print styles ========== */
 
 @media print {
+/* Inlined to avoid required HTTP connection: h5bp.com/r */
     * {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
         box-shadow: none !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
         text-shadow: none !important;
     }
 
@@ -445,7 +550,6 @@ a {
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
@@ -454,10 +558,7 @@ a {
         content: " (" attr(title) ")";
     }
 
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
+    /* Don't show links for images, or javascript/internal links */
     .ir a:after,
     a[href^="javascript:"]:after,
     a[href^="#"]:after {
