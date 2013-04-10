@@ -316,7 +316,7 @@ h1, h2, h3, h4, h5, h6 {
         .paginator a {
             color: #AAAAAA;
             display: inline-block;
-            font-size: 1;
+            font-size: 1em;
             padding: 0 1em;
             }
             .paginator a:hover {
