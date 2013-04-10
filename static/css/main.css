@@ -86,7 +86,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header { /* On body > div */
-    background-color: rgba(0, 65, 125, 0.9); /* On a white background, this creates #185288, the a:hover color; */
+    background-color: #185288;
+    background-color: rgba(0, 65, 125, 0.9);  On a white background, this creates #185288, the a:hover color; 
     color: white;
     font-family: "Quicksand", sans-serif;
     position: fixed;
