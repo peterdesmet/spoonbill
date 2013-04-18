@@ -53,3 +53,7 @@ There are a whole bunch of [Pelican themes available on GitHub](https://github.c
 ## How to contribute
 
 Feel free to [fork this repo](https://help.github.com/articles/fork-a-repo). If you want to contribute something back, [send a pull request](https://help.github.com/articles/using-pull-requests). I'm always happy to [get feedback](https://twitter.com/peterdesmet).
+
+## License
+
+See [LICENSE](LICENSE) file.
