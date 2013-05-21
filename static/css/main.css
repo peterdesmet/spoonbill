@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0 2em;
         }
         .header h2,
-        .header h3,
+        .header p,
         .header nav {
             float: left;
             font-size: 0.8em;
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
         .header h2 {
             width: 25%;
         }
-        .header h3 {
+        .header p {
             font-style: italic;
             text-align: center;
             text-transform: none;
