@@ -130,10 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 .header { /* On body > .container > div */
     background-color: #0182C3;
     background-color: rgba(1, 118, 190, 0.9); /* Equivalent of the #0182C3; */
-    color: white;
-    font-family: "Quicksand", sans-serif;
     position: fixed;
-    text-transform: uppercase;
     top: 0;
     width: 100%;
     }
@@ -141,10 +138,13 @@ h1, h2, h3, h4, h5, h6 {
         color: white;
     }
     .header header {
+        color: white;
+        font-family: "Quicksand", sans-serif;
         line-height: 1em;
         margin: 0 auto;
         max-width: 40em;
         padding: 0 2em;
+        text-transform: uppercase;
         }
         .header h2,
         .header nav {
@@ -173,8 +173,8 @@ h1, h2, h3, h4, h5, h6 {
                         border-bottom: 1px dotted currentcolor;
                     }
 
-    line-height: 1.6;
 .content { /* On body > .container > div */
+    line-height: 1.6em;
     margin: 0 auto;
     margin-top: 2.5em;
     max-width: 40em;
@@ -349,13 +349,13 @@ h1, h2, h3, h4, h5, h6 {
     background: #086A9B;
     border-top: solid 0.5em #0182C3;
     bottom: 0;
-    font-family: "Quicksand", sans-serif;
     height: 10em;
-    line-height: 1em;
     position: absolute;
     width: 100%;
     }
     .footer footer {
+        font-family: "Quicksand", sans-serif;
+        line-height: 1em;
         margin: 0 auto;
         max-width: 40em;
         padding: 1em 2em 3em;
