@@ -133,6 +133,7 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
     }
     .header a {
         color: white;
@@ -179,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 2.5em;
     max-width: 40em;
     padding: 2em;
-    padding-bottom: 10.5em; /* Height of footer */
+    padding-bottom: 12.5em; /* Height of footer */
     }
     .content h1 {
         line-height: 1.2em;
@@ -349,31 +350,47 @@ h1, h2, h3, h4, h5, h6 {
     background: #086A9B;
     border-top: solid 0.5em #0182C3;
     bottom: 0;
-    height: 10em;
+    height: 12em;
     position: absolute;
     width: 100%;
     }
     .footer footer {
+        color: white;
         font-family: "Quicksand", sans-serif;
         line-height: 1em;
         margin: 0 auto;
         max-width: 40em;
-        padding: 1em 2em 3em;
+        padding: 2em;
         }
-        .footer footer a {
-            color: white;
-            display: block;
+        .footer div {
             float: left;
-            text-align: center;
+            font-size: 0.8em;
             width: 33%;
             }
-            .footer footer a:hover {
-                border: none;
+            .footer div img {
+                width: 100%;
             }
-        .footer footer i {
-            display: block;
-            margin-bottom: 0.1em;
-        }
+            .footer div ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                padding-left: 1em;
+            }
+            .footer div li {
+                padding: 0.3em 0;
+            }
+            .footer div h3 {
+                line-height: 1.2em;
+                margin: 0;
+                padding: 0 0 1em;
+            }
+        .footer a {
+            color: #81d5ff;
+            }
+            .footer a:hover {
+                border: none;
+                color: white;
+            }
 
 
 /* ========== My media queries ========== */
