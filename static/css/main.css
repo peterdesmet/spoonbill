@@ -69,6 +69,7 @@ body {
     color: #31322A;
     font-family: "Open Sans", sans-serif;
     font-size: 1.2em;
+    height: 100%;
 }
 
 a {
@@ -83,6 +84,11 @@ a {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Quicksand", sans-serif;
     font-weight: normal;
+}
+
+.container {
+    min-height: 100%;
+    position: relative;
 }
 
 .header { /* On body > div */
@@ -144,6 +150,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 2.5em;
     max-width: 40em;
     padding: 2em;
+    padding-bottom: 10.5em; /* Height of footer */
     }
     .content h1 {
         line-height: 1.2em;
@@ -340,13 +347,19 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 .footer { /* On body > div */
+    background: #1c98cb;
+    border-top: solid 0.5em #21B7F4;
+    bottom: 0;
     font-family: "Quicksand", sans-serif;
+    height: 10em;
     line-height: 1em;
-    margin: 0 auto;
-    max-width: 40em;
-    padding: 1em 2em 3em;
+    position: absolute;
+    width: 100%;
     }
     .footer footer {
+        margin: 0 auto;
+        max-width: 40em;
+        padding: 1em 2em 3em;
         }
         .footer footer a {
             display: block;
