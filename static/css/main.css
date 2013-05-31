@@ -66,32 +66,31 @@ textarea {
 /* ========== h5bp: My custom styles ========== */
 
 /* Colourco.de
-standard-blue: #1C98CB;
-light-blue: #21B7F4;
-dark-blue: #1D779B;
-light-gray: #5C5C5C;
-dark-gray: #454545;
-highlight-orange: #F45E21;
-highlight-brown: #944524;
+    standard-blue: #086A9B;
+    lighter-blue: #0182C3;
+    darker-blue: #0C5376;
+    light-gray: #727272;
+    dark-gray: #313131;
+    highlight-orange: #C44100;
 */
 
 html {
     height: 100%;
 }
 body {
-    color: #454545;
+    color: #313131;
     font-family: "Open Sans", sans-serif;
     font-size: 1.2em;
     height: 100%;
 }
 
 a {
-    color: #1C98CB;
+    color: #086A9B;
     text-decoration: none;
     }
     a:hover {
         border-bottom: 1px dotted currentcolor;
-        color: #1D779B;
+        color: #0C5376;
     }
 
 h1, h2, h3, h4, h5, h6 {
@@ -104,9 +103,9 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-.header { /* On body > div */
-    background-color: #1C98CB;
-    background-color: rgb(28, 152, 203); /* Search rgba(0, 65, 125, 0.9) equivalent of the a:hover color; */
+.header { /* On body > container > div */
+    background-color: #086A9B;
+    background-color: rgb(8, 106, 155); /* Search rgba(0, 65, 125, 0.9) equivalent of the a:hover color; */
     color: white;
     font-family: "Quicksand", sans-serif;
     position: fixed;
@@ -360,8 +359,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 .footer { /* On body > div */
-    background: #1c98cb;
-    border-top: solid 0.5em #21B7F4;
+    background: #086A9B;
+    border-top: solid 0.5em #0182C3;
     bottom: 0;
     font-family: "Quicksand", sans-serif;
     height: 10em;
