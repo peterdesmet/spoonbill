@@ -42,7 +42,7 @@ Spoonbill has some custom Pelican setting identifiers. Don't forget to include t
 
 Spoonbill is based on [html5boilerplate](http://html5boilerplate.com/). The following default files are included, but not activated: `js/main.js`, `js/plugins.js`, `js/vendor/jquery-1.9.1.min.js` (see at the end of [base.html](templates/base.html)).
 
-## Known issues
+## Limitations
 
 Translations are not supported.
 
