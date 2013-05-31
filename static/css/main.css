@@ -65,20 +65,33 @@ textarea {
 
 /* ========== h5bp: My custom styles ========== */
 
+/* Colourco.de
+standard-blue: #1C98CB;
+light-blue: #21B7F4;
+dark-blue: #1D779B;
+light-gray: #5C5C5C;
+dark-gray: #454545;
+highlight-orange: #F45E21;
+highlight-brown: #944524;
+*/
+
+html {
+    height: 100%;
+}
 body {
-    color: #31322A;
+    color: #454545;
     font-family: "Open Sans", sans-serif;
     font-size: 1.2em;
     height: 100%;
 }
 
 a {
-    color: #1C7BBB;
+    color: #1C98CB;
     text-decoration: none;
     }
     a:hover {
         border-bottom: 1px dotted currentcolor;
-        color: #185288;
+        color: #1D779B;
     }
 
 h1, h2, h3, h4, h5, h6 {
@@ -92,8 +105,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header { /* On body > div */
-    background-color: #185288;
-    background-color: rgba(0, 65, 125, 0.9); /* On a white background, this creates #185288, the a:hover color; */
+    background-color: #1C98CB;
+    background-color: rgb(28, 152, 203); /* Search rgba(0, 65, 125, 0.9) equivalent of the a:hover color; */
     color: white;
     font-family: "Quicksand", sans-serif;
     position: fixed;
@@ -362,6 +375,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 1em 2em 3em;
         }
         .footer footer a {
+            color: white;
             display: block;
             float: left;
             text-align: center;
