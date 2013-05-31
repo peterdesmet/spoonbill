@@ -368,7 +368,7 @@ h1, h2, h3, h4, h5, h6 {
             width: 33%;
             }
             .footer div img {
-                width: 100%;
+                margin-top: 1em;
             }
             .footer div ul {
                 list-style: none;
