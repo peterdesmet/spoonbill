@@ -92,6 +92,30 @@ a {
         border-bottom: 1px dotted currentcolor;
         color: #0C5376;
     }
+    a[href^="https://github.com"],
+    a[href^="https://twitter.com"],
+    a[href$="/rss.xml"] {
+    /* Bug: http://stackoverflow.com/questions/8951822
+       The attribute-selector doesn't work when style is applied with :before only, 
+       causing all <a>s to be targetted. Adding any style for the element without 
+       the pseudo-element seems to fix this. */
+        font-family: inherit;
+    }
+    a[href^="https://github.com"]:before {
+        content: "\f09b"; /* FontAwesome icon-github */
+        font-family: "FontAwesome";
+        padding-right: 0.3em;
+    }
+    a[href^="https://twitter.com"]:before {
+        content: "\f099"; /* FontAwesome icon-twitter */
+        font-family: "FontAwesome";
+        padding-right: 0.3em;
+    }
+    a[href$="/rss.xml"]:before {
+        content: "\f09e"; /* FontAwesome icon-rss */
+        font-family: "FontAwesome";
+        padding-right: 0.3em;
+    }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Quicksand", sans-serif;
@@ -215,36 +239,6 @@ h1, h2, h3, h4, h5, h6 {
                     .tags li:last-child:after {
                         content: ".";
                     }
-        .single a[href*="picasaweb"],
-        .single a[href^="https://github.com"],
-        .single a[href*="twitter.com"],
-        .single a[href*="linkedin.com"] {
-            /* Bug: http://stackoverflow.com/questions/8951822
-               The attribute-selector doesn't work when style is applied with :before only, 
-               causing all <a>s to be targetted. Adding any style for the element without 
-               the pseudo-element seems to fix this. */
-            font-family: inherit;
-            }
-            .single a[href*="picasaweb"]:before {
-                content: "\f03e"; /* FontAwesome icon-picture */
-                font-family: "FontAwesome";
-                padding-right: 0.3em;
-            }
-            .single a[href^="https://github.com"]:before {
-                content: "\f09b"; /* FontAwesome icon-github */
-                font-family: "FontAwesome";
-                padding-right: 0.3em;
-            }
-            .single a[href*="twitter.com"]:before {
-                content: "\f081"; /* FontAwesome icon-twitter-sign */
-                font-family: "FontAwesome";
-                padding-right: 0.3em;
-            }
-            .single a[href*="linkedin.com"]:before {
-                content: "\f08c"; /* FontAwesome icon-linkedin-sign */
-                font-family: "FontAwesome";
-                padding-right: 0.3em;
-            }
         .single h2 {
             font-size: 1.6em;
             line-height: 1.2em;
