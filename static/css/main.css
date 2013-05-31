@@ -98,12 +98,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
-.container {
+.container /* On body */ {
     min-height: 100%;
     position: relative;
 }
 
-.header { /* On body > container > div */
+.header { /* On body > .container > div */
     background-color: #0182C3;
     background-color: rgba(1, 118, 190, 0.9); /* Equivalent of the #0182C3; */
     color: white;
@@ -149,8 +149,8 @@ h1, h2, h3, h4, h5, h6 {
                         border-bottom: 1px dotted currentcolor;
                     }
 
-.content { /* On body > div */
     line-height: 1.6;
+.content { /* On body > .container > div */
     margin: 0 auto;
     margin-top: 2.5em;
     max-width: 40em;
@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 0.5em;  
     }
 
-    .index { /* On body > .content > ol */
+    .index { /* On body > .container > .content > ol */
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
                 padding: 0.3em;
             }
 
-    .single { /* On body > .content > article > section */
+    .single { /* On body > .container > .content > article > section */
         }
         .single footer { /* Post metadata */
             color: #AAAAAA;
@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
                 display: inline;
                 font-style: normal;
             }
-            .tags { /* On body > .content > article > section > footer > ul */
+            .tags { /* On body > .container > .content > article > section > footer > ul */
                 font-size: 0.8em;
                 margin: 0.5em 0 0;
                 padding: 0;
@@ -320,7 +320,7 @@ h1, h2, h3, h4, h5, h6 {
             margin: 0 -0.5em; /* Extend border left/right */
         }
 
-    .paginator { /* On body > .content */
+    .paginator { /* On body > .container > .content */
         color: #AAAAAA;
         line-height: 1.2em;
         margin-bottom: 1em;
@@ -345,13 +345,13 @@ h1, h2, h3, h4, h5, h6 {
             text-transform: uppercase;
         }
 
-    .comments { /* On body > .content > article > section */
+    .comments { /* On body > .container > .content > article > section */
         border-top: 1px dashed #CCCCCC;
         margin: 0 -0.5em; /* Extend border left/right */
         padding: 0.5em;
     }
 
-.footer { /* On body > div */
+.footer { /* On body > .container > div */
     background: #086A9B;
     border-top: solid 0.5em #0182C3;
     bottom: 0;
