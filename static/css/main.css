@@ -66,9 +66,9 @@ textarea {
 /* ========== h5bp: My custom styles ========== */
 
 /* Colourco.de
-    standard-blue: #086A9B;
-    lighter-blue: #0182C3;
-    darker-blue: #0C5376;
+    standard-blue: #0182C3;
+    darker-blue: #086A9B;
+    hover-blue: #0C5376;
     light-gray: #727272;
     dark-gray: #313131;
     highlight-orange: #C44100;
@@ -85,7 +85,7 @@ body {
 }
 
 a {
-    color: #086A9B;
+    color: #0182C3;
     text-decoration: none;
     }
     a:hover {
@@ -104,8 +104,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header { /* On body > container > div */
-    background-color: #086A9B;
-    background-color: rgb(8, 106, 155); /* Search rgba(0, 65, 125, 0.9) equivalent of the a:hover color; */
+    background-color: #0182C3;
+    background-color: rgba(1, 118, 190, 0.9); /* Equivalent of the #0182C3; */
     color: white;
     font-family: "Quicksand", sans-serif;
     position: fixed;
