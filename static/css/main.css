@@ -387,9 +387,6 @@ h1, h2, h3, h4, h5, h6 {
         .header nav {
             width: 50%;
         }
-        .header h3 {
-            display: none;
-        }
     .index p {
         display: none; /* Hide description */
     }
