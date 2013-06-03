@@ -196,7 +196,10 @@ h1, h2, h3, h4, h5, h6 {
             margin: 0 -0.5em; /* Extend border left/right */
             padding: 0.5em;
             }
-            .index h2,
+            .index h2 {
+                line-height: 1.2em;
+                margin: 0;
+            }
             .index p {
                 margin: 0;
             }
@@ -226,7 +229,6 @@ h1, h2, h3, h4, h5, h6 {
                 font-style: normal;
             }
             .tags { /* On body > .container > .content > article > section > footer > ul */
-                font-size: 0.8em;
                 margin: 0.5em 0 0;
                 padding: 0;
                 }
@@ -245,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
             line-height: 1.2em;
         }
         .single h3 {
-            border-bottom: 1px solid currentcolor;
+            border-bottom: 0.1em solid currentcolor;
             color: #767676;
             font-size: 1.4em;
             line-height: 1.2em;
@@ -260,7 +262,6 @@ h1, h2, h3, h4, h5, h6 {
             max-width: 100%;
         }
         .single blockquote {
-            border-left: 0.3em solid #CCCCCC;
             color: #767676;
             padding: 0 1em;
         }
