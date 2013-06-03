@@ -6,9 +6,9 @@ Eurasian Spoonbill is a theme for [Pelican](http://docs.getpelican.com/) powered
 
 ![screenshot](screenshot.png)
 
-## Installation, settings, dependecies, etc.
+## Installation, settings, dependencies, etc.
 
-See [Spoonbill repository](https://github.com/peterdesmet/spoonbill).
+See the [Spoonbill repository](https://github.com/peterdesmet/spoonbill).
 
 ## License
 
