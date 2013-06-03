@@ -79,7 +79,7 @@ html {
 }
 body {
     color: #313131;
-    font-family: "Open Sans", sans-serif;
+    font-family: Georgia, sans-serif;
     font-size: 1.2em;
     height: 100%;
 }
@@ -118,7 +118,6 @@ a {
     }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Quicksand", sans-serif;
     font-weight: normal;
 }
 
@@ -140,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .header header {
         color: white;
-        font-family: "Quicksand", sans-serif;
+        font-family: "Noto Sans", sans-serif;
         line-height: 1em;
         margin: 0 auto;
         max-width: 40em;
@@ -211,6 +210,7 @@ h1, h2, h3, h4, h5, h6 {
         }
         .single footer { /* Post metadata */
             color: #AAAAAA;
+            font-family: "Noto Sans", sans-serif;
             font-size: 0.8em;
             letter-spacing: 0.3em;
             margin: -1.5em 0 2em; /* Closer to h1 */
@@ -317,6 +317,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .paginator { /* On body > .container > .content */
         color: #AAAAAA;
+        font-family: "Noto Sans", sans-serif;
         line-height: 1.2em;
         margin-bottom: 1em;
         text-align: center;
@@ -356,7 +357,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .footer footer {
         color: white;
-        font-family: "Quicksand", sans-serif;
+        font-family: "Noto Sans", sans-serif;
         line-height: 1em;
         margin: 0 auto;
         max-width: 40em;
