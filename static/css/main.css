@@ -72,6 +72,7 @@ textarea {
     light-gray: #767676;
     dark-gray: #4E4E4E;
     border-gray: #CCCCCC;
+    highlight-orange: #C34201;
 */
 
 html {
@@ -85,12 +86,12 @@ body {
 }
 
 a {
-    color: #0182C3;
+    color: #EB4F00; /* #0182C3; */
     text-decoration: none;
     }
     a:hover {
         border-bottom: 1px dotted currentcolor;
-        color: #0C5376;
+        color: #C34201; /* #0C5376; */
     }
     a[href^="https://github.com"],
     a[href^="https://twitter.com"],
