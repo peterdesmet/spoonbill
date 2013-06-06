@@ -141,6 +141,7 @@ h1, h2, h3, h4, h5, h6 {
     .header header {
         color: white;
         font-family: "Noto Sans", sans-serif;
+        letter-spacing: 0.2em;
         line-height: 1em;
         margin: 0 auto;
         max-width: 40em;
@@ -367,11 +368,18 @@ h1, h2, h3, h4, h5, h6 {
         }
         .footer div {
             float: left;
-            font-size: 0.8em;
             width: 33%;
             }
             .footer div img {
                 margin-top: 1em;
+            }
+            .footer div h2 {
+                font-size: 0.8em;
+                letter-spacing: 0.2em;
+                line-height: 1.2em;
+                margin: 0;
+                padding: 0 0 1em;
+                text-transform: uppercase;
             }
             .footer div ul {
                 list-style: none;
@@ -380,19 +388,8 @@ h1, h2, h3, h4, h5, h6 {
                 padding-left: 1em;
             }
             .footer div li {
+                font-size: 0.8em;
                 padding: 0.3em 0;
-            }
-            .footer div h3 {
-                line-height: 1.2em;
-                margin: 0;
-                padding: 0 0 1em;
-            }
-        .footer a {
-            color: #81d5ff;
-            }
-            .footer a:hover {
-                border: none;
-                color: white;
             }
 
 
@@ -428,7 +425,7 @@ h1, h2, h3, h4, h5, h6 {
     .index time {
         display: none;
     }
-    .footer div h3 {
+    .footer div h2 {
         display: none; /* Hide footer titles */
     }
 }
