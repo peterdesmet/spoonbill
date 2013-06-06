@@ -415,16 +415,11 @@ h1, h2, h3, h4, h5, h6 {
 /* ========== My media queries ========== */
 
 @media only screen and (max-width: 48em) {
-/* Medium size: hide header subtitle, post descriptions and footer logo. */
+/* Medium size */
 
-    .header {
-        }
-        .header h2,
-        .header nav {
-            width: 50%;
-        }
-    .index p, /* Hide description */
-    .footer img { /* Hide footer logo */
+    .subtitle, /* Homepage subtitle */
+    .index p, /* Article description */
+    .footer img { /* Footer logo */
         display: none;
     }
     .footer div {
@@ -433,7 +428,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (max-width: 36em) {
-/* Small size: hide post dates, fix header and hide footer titles. */
+/* Small size */
 
     .header {
         position: relative;
@@ -441,11 +436,10 @@ h1, h2, h3, h4, h5, h6 {
     .content {
         margin-top: 0;
     }
-    .index time {
+    .content h1.title, /* Homepage title */
+    .index time, /* Article date */
+    .footer div h2 { /* Footer titles */
         display: none;
-    }
-    .footer div h2 {
-        display: none; /* Hide footer titles */
     }
 }
 
