@@ -178,10 +178,10 @@ h1, h2, h3, h4, h5, h6 {
 .content { /* On body > .container > div */
     line-height: 1.6em;
     margin: 0 auto;
-    margin-top: 2.5em;
+    margin-top: 2em;
     max-width: 40em;
     padding: 2em;
-    padding-bottom: 13.5em; /* Height of footer + 1em */
+    padding-bottom: 13em; /* Height of footer + 2em */
     }
     .content h1 {
         line-height: 1.2em;
@@ -359,7 +359,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #086A9B;
     border-top: solid 0.5em #0182C3;
     bottom: 0;
-    height: 12em;
+    height: 11em;
     position: absolute;
     width: 100%;
     }
