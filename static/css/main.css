@@ -363,6 +363,13 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     width: 100%;
     }
+    .footer a {
+        color: #81D5FF;
+        }
+        .footer a:hover {
+            border: none;
+            color: white;
+        }
     .footer footer {
         color: white;
         font-family: "Noto Sans", sans-serif;
