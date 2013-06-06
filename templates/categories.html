@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Categories - {{ SITENAME }}{% endblock %}
+{% block title %}Categories - {{ SITENAME }}{% endblock title %}
 {% block content %}
 <h1>Categories</h1>
 <ul>
@@ -8,4 +8,4 @@
     <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
 {% endfor %}
 </ul>
-{% endblock %}
+{% endblock content %}

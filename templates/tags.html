@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Tags - {{ SITENAME }}{% endblock %}
+{% block title %}Tags - {{ SITENAME }}{% endblock title %}
 {% block content %}
 <h1>Tags</h1>
 <ul>
@@ -8,4 +8,4 @@
     <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
 {% endfor %}
 </ul>
-{% endblock %}
+{% endblock content %}

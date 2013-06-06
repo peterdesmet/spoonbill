@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}{{ article.title }} - {{ SITENAME }}{% endblock %}
+{% block title %}{{ article.title }} - {{ SITENAME }}{% endblock title %}
 {% block content %}
 <article>
 	<section class="single">
@@ -33,4 +33,4 @@
         {% include "disqus.html" %}
     </section>
 </article>
-{% endblock %}
+{% endblock content %}
