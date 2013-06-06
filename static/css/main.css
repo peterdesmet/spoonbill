@@ -195,7 +195,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0 1em 3em;
         text-transform: uppercase;
     }
-    .index { /* On body > .container > .content > ol */
+    .content .index { /* On body > .container > .content > ol */
         list-style-type: none;
         margin: 0;
         padding: 0;
