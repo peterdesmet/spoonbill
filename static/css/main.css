@@ -187,7 +187,14 @@ h1, h2, h3, h4, h5, h6 {
         line-height: 1.2em;
         margin-top: 0.5em;  
     }
-
+    .content .subtitle { /* On body > .container > .content > p */
+        color: #767676;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 0.8em;
+        letter-spacing: 0.2em;
+        padding: 0 1em 3em;
+        text-transform: uppercase;
+    }
     .index { /* On body > .container > .content > ol */
         list-style-type: none;
         margin: 0;
