@@ -130,6 +130,8 @@ h1, h2, h3, h4, h5, h6 {
 .header { /* On body > .container > div */
     background-color: #086A9B;
     background-color: rgba(0, 91, 146, 0.9); /* Equivalent of the #086A9B; */
+    height: 2.5em;
+    left: 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -178,9 +180,9 @@ h1, h2, h3, h4, h5, h6 {
 .content { /* On body > .container > div */
     line-height: 1.6em;
     margin: 0 auto;
-    margin-top: 2em;
     max-width: 40em;
     padding: 2em;
+    padding-top: 3.5em; /* Height of header + 1em */
     padding-bottom: 13em; /* Height of footer + 2em */
     }
     .content h1 {
