@@ -369,7 +369,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ========== My media queries ========== */
 
 @media only screen and (max-width: 44em) {
-/* Medium size: hide header subtitle and post descriptions. */
+/* Medium size. */
 
     .header {
         }
@@ -377,27 +377,23 @@ h1, h2, h3, h4, h5, h6 {
         .header nav {
             width: 50%;
         }
-        .header h3 {
-            display: none;
-        }
-    .index p {
-        display: none; /* Hide description */
+    .header p, /* Site subtitle */
+    .index p { /* Index post summary */
+        display: none;
     }
 }
 
 @media only screen and (max-width: 36em) {
-/* Small size: hide post dates and fix header. */
+/* Small size. */
 
     .header {
         position: relative;
     }
     .content {
-        margin-top: 0;
+        padding-top: 2em;
     }
-    .index time {
-        display: none;
-    }
-    .footer span {
+    .index time, /* Index post date */
+    .footer span { /* Footer titles */
         display: none;
     }
 }
