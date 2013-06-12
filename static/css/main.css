@@ -88,10 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 .header { /* On body > div */
     background-color: #185288;
     background-color: rgba(0, 65, 125, 0.9); /* On a white background, this creates #185288, the a:hover color; */
-    color: white;
-    font-family: "Quicksand", sans-serif;
     position: fixed;
-    text-transform: uppercase;
     top: 0;
     width: 100%;
     }
@@ -99,10 +96,13 @@ h1, h2, h3, h4, h5, h6 {
         color: white;
     }
     .header header {
+        color: white;
+        font-family: "Quicksand", sans-serif;
         line-height: 1em;
         margin: 0 auto;
         max-width: 40em;
         padding: 0 2em;
+        text-transform: uppercase;
         }
         .header h2,
         .header p,
@@ -340,13 +340,14 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 .footer { /* On body > div */
-    font-family: "Quicksand", sans-serif;
-    line-height: 1em;
-    margin: 0 auto;
-    max-width: 40em;
-    padding: 1em 2em 3em;
+    width: 100%;
     }
     .footer footer {
+        font-family: "Quicksand", sans-serif;
+        line-height: 1em;
+        margin: 0 auto;
+        max-width: 40em;
+        padding: 1em 2em 3em;
         }
         .footer footer a {
             display: block;
