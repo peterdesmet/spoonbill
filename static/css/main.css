@@ -205,7 +205,7 @@ h1, h2, h3, h4, h5, h6 {
                     }
         .single a[href*="picasaweb"],
         .single a[href^="https://github.com"],
-        .single a[href*="twitter.com"],
+        .single a[href^="https://twitter.com"],
         .single a[href*="linkedin.com"] {
             /* Bug: http://stackoverflow.com/questions/8951822
                The attribute-selector doesn't work when style is applied with :before only, 
@@ -223,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
                 font-family: "FontAwesome";
                 padding-right: 0.3em;
             }
-            .single a[href*="twitter.com"]:before {
+            .single a[href^="https://twitter.com"]:before {
                 content: "\f081"; /* FontAwesome icon-twitter-sign */
                 font-family: "FontAwesome";
                 padding-right: 0.3em;
