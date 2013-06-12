@@ -7,7 +7,7 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    color: #222222;
 }
 
 body {
@@ -17,11 +17,11 @@ body {
 
 /* Remove text-shadow in selection highlight: h5bp.com/i */
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #B3D4FC;
     text-shadow: none;
 }
 ::selection {
-    background: #b3d4fc;
+    background: #B3D4FC;
     text-shadow: none;
 }
 
@@ -56,8 +56,8 @@ textarea {
 /* ========== h5bp: Chrome frame prompt ========== */
 
 .chromeframe {
-    background: #ccc;
-    color: #000;
+    background: #CCCCCC;
+    color: #000000;
     margin: 0.2em 0;
     padding: 0.2em 0;
 }
@@ -404,7 +404,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .codehilite .hll { background-color: #404040; }
 .codehilite .c { color: #7C7C70; font-style: italic; } /* Comment */
-.codehilite .err { color: #a61717; background-color: #E3D2D2; } /* Error */
+.codehilite .err { color: #A61717; background-color: #E3D2D2; } /* Error */
 .codehilite .g { color: #D0D0D0; } /* Generic */
 .codehilite .k { color: #C0C0C0; font-weight: bold; } /* Keyword */
 .codehilite .l { color: #D0D0D0; } /* Literal */
@@ -551,7 +551,7 @@ h1, h2, h3, h4, h5, h6 {
     * {
         background: transparent !important;
         box-shadow: none !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        color: #000000 !important; /* Black prints faster: h5bp.com/s */
         text-shadow: none !important;
     }
 
