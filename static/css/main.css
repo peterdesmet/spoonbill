@@ -131,8 +131,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header { /* On body > .container > div */
-    background-color: #086A9B;
-    background-color: rgba(0, 91, 146, 0.9); /* Equivalent of the #086A9B; */
+    background-color: #D3CA00;
+    background-color: rgba(208, 198, 0, 0.9); /* Equivalent of the #D3CA00; */
     height: 2.5em;
     left: 0;
     position: fixed;
@@ -141,10 +141,9 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
     }
     .header a {
-        color: white;
+        color: currentcolor;
     }
     .header header {
-        color: white;
         font-family: "Noto Sans", sans-serif;
         letter-spacing: 0.2em;
         line-height: 1em;
