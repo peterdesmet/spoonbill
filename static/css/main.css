@@ -395,6 +395,7 @@ h1, h2, h3, h4, h5, h6 {
             }
             .footer div img {
                 margin-top: 1em;
+                width: 100%;
             }
             .footer div h2 {
                 font-size: 0.8em;
