@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
     }
     .header a {
-        color: currentcolor;
+        color: #313131;
     }
     .header header {
         font-family: "Noto Sans", sans-serif;
@@ -153,6 +153,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0 2em;
         position: relative;
         text-transform: uppercase;
+        z-index: 1; /* For lte IE8 */
         }
         .header h2,
         .header nav {
