@@ -180,6 +180,17 @@ h1, h2, h3, h4, h5, h6 {
                     .header nav li.active a {
                         border-bottom: 1px dotted currentcolor;
                     }
+    .header div { /* Header logo */
+        background: #A39E5D url("../img/inbo-colors.png") repeat-y left;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: calc((100% - 40em - 4em)/2); /* Full size - width header - padding header, devided by two */ 
+        }
+        .header div img {
+            margin-left: 60px; /* For background-image */ 
+        }
 
 .content { /* On body > .container > div */
     line-height: 1.6em;
@@ -425,6 +436,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Medium size */
 
     .subtitle, /* Index subtitle */
+    .header div, /* Header logo */
     .index p, /* Article description */
     .footer img { /* Footer logo */
         display: none;
