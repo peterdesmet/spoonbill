@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
         font-family: "Noto Sans", sans-serif;
         font-size: 0.8em;
         letter-spacing: 0.2em;
-        padding: 0 1em 3em;
+        padding: 0 1em 1em;
         text-transform: uppercase;
     }
     .content .index { /* On body > .container > .content > ol */
@@ -211,6 +211,7 @@ h1, h2, h3, h4, h5, h6 {
             padding: 0.5em;
             }
             .index h2 {
+                font-size: 1.4em;
                 line-height: 1.2em;
                 margin: 0;
             }
