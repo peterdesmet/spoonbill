@@ -279,6 +279,7 @@ h1, h2, h3, h4, h5, h6 {
             line-height: 1.2em;
         }
         .single img {
+            clear: both;
             max-width: 100%;
         }
         .single blockquote {
@@ -335,6 +336,15 @@ h1, h2, h3, h4, h5, h6 {
             border-top: 1px dashed #CCCCCC;
             margin: 0 -0.5em; /* Extend border left/right */
         }
+        .single .team-member { /* On about page */
+            float: left;
+            margin-right: 1.2em;
+            width: 30%;
+            }
+            .team-member h3 {
+                border: none;
+                margin-top: 0;
+            }
 
     .paginator { /* On body > .container > .content */
         color: #767676;
