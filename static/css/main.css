@@ -306,6 +306,7 @@ h1, h2, h3, h4, h5, h6 {
             .single pre code {
                 border: none;
                 background: transparent;
+                font-size: 1em;
                 padding: 0;
                 white-space: pre;
             }
