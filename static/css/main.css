@@ -17,11 +17,11 @@ body {
 
 /* Remove text-shadow in selection highlight: h5bp.com/i */
 ::-moz-selection {
-    background: #B3D4FC;
+    background-color: #B3D4FC;
     text-shadow: none;
 }
 ::selection {
-    background: #B3D4FC;
+    background-color: #B3D4FC;
     text-shadow: none;
 }
 
@@ -50,16 +50,6 @@ fieldset {
 /* Allow only vertical resizing of textareas. */
 textarea {
     resize: vertical;
-}
-
-
-/* ========== h5bp: Chrome frame prompt ========== */
-
-.chromeframe {
-    background: #CCCCCC;
-    color: #000000;
-    margin: 0.2em 0;
-    padding: 0.2em 0;
 }
 
 
@@ -279,6 +269,7 @@ h1, h2, h3, h4, h5, h6 {
             .single pre code {
                 border: none;
                 background: transparent;
+                font-size: 1em;
                 padding: 0;
                 white-space: pre;
             }
