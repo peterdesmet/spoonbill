@@ -305,6 +305,17 @@ h1, h2, h3, h4, h5, h6 {
             border-top: 1px dashed #CCCCCC;
             margin: 0 -0.5em; /* Extend border left/right */
         }
+        .single .chart { /* For svg charts */
+                display: block;
+                height: 300px; /* A default height */
+                width: 100%;
+            }
+            .single .chart text {
+                font-family: inherit;
+            }
+            .single .chart .title {
+                font-weight: bold;
+            }
 
     .paginator { /* On body > .content */
         color: #AAAAAA;
