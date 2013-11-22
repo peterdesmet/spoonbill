@@ -163,9 +163,6 @@ h1, h2, h3, h4, h5, h6 {
                 margin-left: 1em;
                 padding: 0.3em;
             }
-            .index .footnote {
-                display: none;
-            }
 
     .single { /* On body > .content > article > section */
         }
