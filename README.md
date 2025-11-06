@@ -1,5 +1,8 @@
 # Spoonbill
 
+[![repo
+status](https://www.repostatus.org/badges/latest/unsupported.svg)](https://www.repostatus.org/#unsupported)
+
 ## Introduction
 
 Spoonbill is a theme for [Pelican](http://docs.getpelican.com/) powered blogs. I use it for [my own blog](http://peterdesmet.com) and it was inspired by [Zach Holman](http://zachholman.com/)'s blog.
